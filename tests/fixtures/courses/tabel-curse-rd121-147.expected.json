@@ -1,0 +1,584 @@
+{
+  "_comment": "Valori așteptate pentru parserul de curse, scrise independent (BigInt). Sumele în unitatea minoră RON (bani). Foaia: „XX00DEM 2025”, antet în rândul 120, valută implicită RON.",
+  "sheet": "XX00DEM 2025",
+  "headerRow": 120,
+  "currency": "RON",
+  "vatRatePct": 21,
+  "rows": [
+    {
+      "row": 121,
+      "loadDate": "2025-08-07",
+      "unloadDate": "2025-08-09",
+      "plates": "XX00DEM/XX30DEM",
+      "truck": "XX00DEM",
+      "trailer": "XX30DEM",
+      "driver": "DORIAN",
+      "route": "CAREI - SZEKESFEHERVAR",
+      "note": null,
+      "strayK": null,
+      "origin": "CAREI",
+      "stops": [
+        "SZEKESFEHERVAR"
+      ],
+      "priceStatus": "ok",
+      "netMinor": 294066,
+      "vatMinor": 61754,
+      "grossMinor": 355820
+    },
+    {
+      "row": 122,
+      "loadDate": "2025-08-09",
+      "unloadDate": "2025-08-12",
+      "plates": "XX00DEM/XX30DEM",
+      "truck": "XX00DEM",
+      "trailer": "XX30DEM",
+      "driver": "DORIAN",
+      "route": "GYOR - CAMPIA TURZII",
+      "note": null,
+      "strayK": null,
+      "origin": "GYOR",
+      "stops": [
+        "CAMPIA TURZII"
+      ],
+      "priceStatus": "ok",
+      "netMinor": 503385,
+      "vatMinor": 105711,
+      "grossMinor": 609096
+    },
+    {
+      "row": 123,
+      "loadDate": "2025-08-12",
+      "unloadDate": "2025-08-13",
+      "plates": "XX00DEM/XX30DEM",
+      "truck": "XX00DEM",
+      "trailer": "XX30DEM",
+      "driver": "DORIAN",
+      "route": "TISZAVASVARI - EGER",
+      "note": null,
+      "strayK": null,
+      "origin": "TISZAVASVARI",
+      "stops": [
+        "EGER"
+      ],
+      "priceStatus": "ok",
+      "netMinor": 155222,
+      "vatMinor": 32597,
+      "grossMinor": 187819
+    },
+    {
+      "row": 124,
+      "loadDate": "2025-08-13",
+      "unloadDate": "2025-08-14",
+      "plates": "XX00DEM/XX30DEM",
+      "truck": "XX00DEM",
+      "trailer": "XX30DEM",
+      "driver": "DORIAN",
+      "route": "PRESOV - TARGU MURES",
+      "note": null,
+      "strayK": null,
+      "origin": "PRESOV",
+      "stops": [
+        "TARGU MURES"
+      ],
+      "priceStatus": "ok",
+      "netMinor": 398619,
+      "vatMinor": 83710,
+      "grossMinor": 482329
+    },
+    {
+      "row": 125,
+      "loadDate": "2025-08-14",
+      "unloadDate": "2025-08-15",
+      "plates": "XX00DEM/XX30DEM",
+      "truck": "XX00DEM",
+      "trailer": "XX30DEM",
+      "driver": "DORIAN",
+      "route": "TARGU MURES - HAJDUBOSZORMENY",
+      "note": null,
+      "strayK": null,
+      "origin": "TARGU MURES",
+      "stops": [
+        "HAJDUBOSZORMENY"
+      ],
+      "priceStatus": "ok",
+      "netMinor": 155630,
+      "vatMinor": 32682,
+      "grossMinor": 188312
+    },
+    {
+      "row": 126,
+      "loadDate": "2025-08-15",
+      "unloadDate": "2025-08-16",
+      "plates": "XX00DEM/XX30DEM",
+      "truck": "XX00DEM",
+      "trailer": "XX30DEM",
+      "driver": "DORIAN",
+      "route": "KISVARDA - ORADEA",
+      "note": null,
+      "strayK": null,
+      "origin": "KISVARDA",
+      "stops": [
+        "ORADEA"
+      ],
+      "priceStatus": "ok",
+      "netMinor": 210513,
+      "vatMinor": 44208,
+      "grossMinor": 254721
+    },
+    {
+      "row": 127,
+      "loadDate": "2025-08-16",
+      "unloadDate": "2025-08-16",
+      "plates": "XX00DEM/XX30DEM",
+      "truck": "XX00DEM",
+      "trailer": "XX30DEM",
+      "driver": "DORIAN",
+      "route": "SIMLEU SILVANIEI - CEHU+ZALAU",
+      "note": null,
+      "strayK": null,
+      "origin": "SIMLEU SILVANIEI",
+      "stops": [
+        "CEHU",
+        "ZALAU"
+      ],
+      "priceStatus": "ok",
+      "netMinor": 125000,
+      "vatMinor": 26250,
+      "grossMinor": 151250
+    },
+    {
+      "row": 128,
+      "loadDate": "2025-08-19",
+      "unloadDate": "2025-08-20",
+      "plates": "XX00DEM/XX30DEM",
+      "truck": "XX00DEM",
+      "trailer": "XX30DEM",
+      "driver": "DORIAN",
+      "route": "TOKAJ - BISTRITA",
+      "note": "lepakolni Kalman",
+      "strayK": null,
+      "origin": "TOKAJ",
+      "stops": [
+        "BISTRITA"
+      ],
+      "priceStatus": "ok",
+      "netMinor": 202105,
+      "vatMinor": 42442,
+      "grossMinor": 244547,
+      "handoverTo": "Kalman"
+    },
+    {
+      "row": 129,
+      "loadDate": "2025-08-20",
+      "unloadDate": "2025-08-21",
+      "plates": "XX00DEM/XX30DEM",
+      "truck": "XX00DEM",
+      "trailer": "XX30DEM",
+      "driver": "KALMAN",
+      "route": "SALGOTARJAN - KAPOSVAR",
+      "note": "lepakolni Dorian",
+      "strayK": null,
+      "origin": "SALGOTARJAN",
+      "stops": [
+        "KAPOSVAR"
+      ],
+      "priceStatus": "ok",
+      "netMinor": 316129,
+      "vatMinor": 66387,
+      "grossMinor": 382516,
+      "handoverTo": "Dorian"
+    },
+    {
+      "row": 130,
+      "loadDate": "2025-08-21",
+      "unloadDate": "2025-08-23",
+      "plates": "XX00DEM/XX30DEM",
+      "truck": "XX00DEM",
+      "trailer": "XX30DEM",
+      "driver": "DORIAN",
+      "route": "GYOR - CAMPIA TURZII",
+      "note": null,
+      "strayK": null,
+      "origin": "GYOR",
+      "stops": [
+        "CAMPIA TURZII"
+      ],
+      "priceStatus": "ok",
+      "netMinor": 505706,
+      "vatMinor": 106198,
+      "grossMinor": 611904
+    },
+    {
+      "row": 131,
+      "loadDate": "2025-08-23",
+      "unloadDate": "2025-08-26",
+      "plates": "XX00DEM/XX30DEM",
+      "truck": "XX00DEM",
+      "trailer": "XX30DEM",
+      "driver": "DORIAN",
+      "route": "TISZAUJVAROS - CSORNA",
+      "note": null,
+      "strayK": null,
+      "origin": "TISZAUJVAROS",
+      "stops": [
+        "CSORNA"
+      ],
+      "priceStatus": "ok",
+      "netMinor": 269797,
+      "vatMinor": 56657,
+      "grossMinor": 326454
+    },
+    {
+      "row": 132,
+      "loadDate": "2025-08-26",
+      "unloadDate": "2025-08-27",
+      "plates": "XX00DEM/XX30DEM",
+      "truck": "XX00DEM",
+      "trailer": "XX30DEM",
+      "driver": "DORIAN",
+      "route": "PECS - SIBIU",
+      "note": null,
+      "strayK": 3900,
+      "origin": "PECS",
+      "stops": [
+        "SIBIU"
+      ],
+      "priceStatus": "missing",
+      "status": "review"
+    },
+    {
+      "row": 133,
+      "loadDate": "2025-08-27",
+      "unloadDate": "2025-08-28",
+      "plates": "XX00DEM/XX30DEM",
+      "truck": "XX00DEM",
+      "trailer": "XX30DEM",
+      "driver": "DORIAN",
+      "route": "SANMARTIN - TAUTII MAGHERAUS",
+      "note": null,
+      "strayK": null,
+      "origin": "SANMARTIN",
+      "stops": [
+        "TAUTII MAGHERAUS"
+      ],
+      "priceStatus": "ok",
+      "netMinor": 95000,
+      "vatMinor": 19950,
+      "grossMinor": 114950
+    },
+    {
+      "row": 134,
+      "loadDate": "2025-08-29",
+      "unloadDate": "2025-08-30",
+      "plates": "XX00DEM/XX30DEM",
+      "truck": "XX00DEM",
+      "trailer": "XX30DEM",
+      "driver": "DORIAN",
+      "route": "MATESZALKA - DEVA",
+      "note": null,
+      "strayK": null,
+      "origin": "MATESZALKA",
+      "stops": [
+        "DEVA"
+      ],
+      "priceStatus": "ok",
+      "netMinor": 210558,
+      "vatMinor": 44217,
+      "grossMinor": 254775
+    },
+    {
+      "row": 135,
+      "loadDate": "2025-08-30",
+      "unloadDate": "2025-08-31",
+      "plates": "XX00DEM/XX30DEM",
+      "truck": "XX00DEM",
+      "trailer": "XX30DEM",
+      "driver": "DORIAN",
+      "route": "GYULA - SATU MARE",
+      "note": null,
+      "strayK": null,
+      "origin": "GYULA",
+      "stops": [
+        "SATU MARE"
+      ],
+      "priceStatus": "ok",
+      "netMinor": 210397,
+      "vatMinor": 44183,
+      "grossMinor": 254580
+    },
+    {
+      "row": 136,
+      "loadDate": "2025-09-02",
+      "unloadDate": "2025-09-04",
+      "plates": "XX00DEM/XX30DEM",
+      "truck": "XX00DEM",
+      "trailer": "XX30DEM",
+      "driver": "DORIAN",
+      "route": "CAREI - CROATIA",
+      "note": null,
+      "strayK": null,
+      "origin": "CAREI",
+      "stops": [],
+      "priceStatus": "ok",
+      "netMinor": 408154,
+      "vatMinor": 85712,
+      "grossMinor": 493866,
+      "destCountry": "HR",
+      "destOnlyCountry": true
+    },
+    {
+      "row": 137,
+      "loadDate": "2025-09-04",
+      "unloadDate": "2025-09-05",
+      "plates": "XX00DEM/XX30DEM",
+      "truck": "XX00DEM",
+      "trailer": "XX30DEM",
+      "driver": "DORIAN",
+      "route": "CROATIA - SFANTU GHEORGHE",
+      "note": null,
+      "strayK": null,
+      "origin": "CROATIA",
+      "stops": [
+        "SFANTU GHEORGHE"
+      ],
+      "priceStatus": "ok",
+      "netMinor": 580391,
+      "vatMinor": 121882,
+      "grossMinor": 702273,
+      "originIsCountry": "HR"
+    },
+    {
+      "row": 138,
+      "loadDate": "2025-09-06",
+      "unloadDate": "2025-09-09",
+      "plates": "XX00DEM/XX30DEM",
+      "truck": "XX00DEM",
+      "trailer": "XX30DEM",
+      "driver": "DORIAN",
+      "route": "TARGU MURES - HAJDUBOSZORMENY",
+      "note": null,
+      "strayK": null,
+      "origin": "TARGU MURES",
+      "stops": [
+        "HAJDUBOSZORMENY"
+      ],
+      "priceStatus": "derived",
+      "grossMinor": 155794,
+      "netMinor": 128755,
+      "vatMinor": 27039
+    },
+    {
+      "row": 139,
+      "loadDate": "2025-09-09",
+      "unloadDate": "2025-09-10",
+      "plates": "XX00DEM/XX30DEM",
+      "truck": "XX00DEM",
+      "trailer": "XX30DEM",
+      "driver": "DORIAN",
+      "route": "ZILINA - SEBES",
+      "note": null,
+      "strayK": null,
+      "origin": "ZILINA",
+      "stops": [
+        "SEBES"
+      ],
+      "priceStatus": "ok",
+      "netMinor": 526579,
+      "vatMinor": 110582,
+      "grossMinor": 637161
+    },
+    {
+      "row": 140,
+      "loadDate": "2025-09-10",
+      "unloadDate": "2025-09-11",
+      "plates": "XX00DEM/XX30DEM",
+      "truck": "XX00DEM",
+      "trailer": "XX30DEM",
+      "driver": "DORIAN",
+      "route": "APAHIDA - GILAU",
+      "note": null,
+      "strayK": null,
+      "origin": "APAHIDA",
+      "stops": [
+        "GILAU"
+      ],
+      "priceStatus": "ok",
+      "netMinor": 118000,
+      "vatMinor": 24780,
+      "grossMinor": 142780
+    },
+    {
+      "row": 141,
+      "loadDate": "2025-09-12",
+      "unloadDate": "2025-09-12",
+      "plates": "XX00DEM/XX30DEM",
+      "truck": "XX00DEM",
+      "trailer": "XX30DEM",
+      "driver": "DORIAN",
+      "route": "KISVARDA - SALONTA",
+      "note": null,
+      "strayK": null,
+      "origin": "KISVARDA",
+      "stops": [
+        "SALONTA"
+      ],
+      "priceStatus": "derived",
+      "grossMinor": 210790,
+      "netMinor": 174207,
+      "vatMinor": 36583
+    },
+    {
+      "row": 142,
+      "loadDate": "2025-09-12",
+      "unloadDate": "2025-09-13",
+      "plates": "XX00DEM/XX30DEM",
+      "truck": "XX00DEM",
+      "trailer": "XX30DEM",
+      "driver": "DORIAN",
+      "route": "CLUJ NAPOCA - TURDA",
+      "note": "lepakolni Kalman",
+      "strayK": null,
+      "origin": "CLUJ NAPOCA",
+      "stops": [
+        "TURDA"
+      ],
+      "priceStatus": "ok",
+      "netMinor": 95000,
+      "vatMinor": 19950,
+      "grossMinor": 114950,
+      "handoverTo": "Kalman"
+    },
+    {
+      "row": 143,
+      "loadDate": "2025-09-13",
+      "unloadDate": "2025-09-16",
+      "plates": "XX00DEM/XX30DEM",
+      "truck": "XX00DEM",
+      "trailer": "XX30DEM",
+      "driver": "ANDOR",
+      "route": "NAGYKALLO - LUGOJ",
+      "note": "lepakolni Dorian",
+      "strayK": null,
+      "origin": "NAGYKALLO",
+      "stops": [
+        "LUGOJ"
+      ],
+      "priceStatus": "ok",
+      "netMinor": 210646,
+      "vatMinor": 44236,
+      "grossMinor": 254882,
+      "handoverTo": "Dorian"
+    },
+    {
+      "row": 144,
+      "loadDate": "2025-09-16",
+      "unloadDate": "2025-09-17",
+      "plates": "XX00DEM/XX30DEM",
+      "truck": "XX00DEM",
+      "trailer": "XX30DEM",
+      "driver": "DORIAN",
+      "route": "LUGOJ - NAGYKALLO",
+      "note": null,
+      "strayK": null,
+      "origin": "LUGOJ",
+      "stops": [
+        "NAGYKALLO"
+      ],
+      "priceStatus": "ok",
+      "netMinor": 168616,
+      "vatMinor": 35409,
+      "grossMinor": 204025
+    },
+    {
+      "row": 145,
+      "loadDate": "2025-09-17",
+      "unloadDate": "2025-09-18",
+      "plates": "XX00DEM/XX30DEM",
+      "truck": "XX00DEM",
+      "trailer": "XX30DEM",
+      "driver": "DORIAN",
+      "route": "NAGYKALLO - ORADEA",
+      "note": null,
+      "strayK": null,
+      "origin": "NAGYKALLO",
+      "stops": [
+        "ORADEA"
+      ],
+      "priceStatus": "ok",
+      "netMinor": 210766,
+      "vatMinor": 44261,
+      "grossMinor": 255027
+    },
+    {
+      "row": 146,
+      "loadDate": "2025-09-18",
+      "unloadDate": "2025-09-19",
+      "plates": "XX00DEM/XX30DEM",
+      "truck": "XX00DEM",
+      "trailer": "XX30DEM",
+      "driver": "DORIAN",
+      "route": "ORADEA - SALONTA + SACUENI +VALEA LUI MIHAI",
+      "note": null,
+      "strayK": null,
+      "origin": "ORADEA",
+      "stops": [
+        "SALONTA",
+        "SACUENI",
+        "VALEA LUI MIHAI"
+      ],
+      "priceStatus": "ok",
+      "netMinor": 132000,
+      "vatMinor": 27720,
+      "grossMinor": 159720
+    },
+    {
+      "row": 147,
+      "loadDate": "2025-09-19",
+      "unloadDate": "2025-09-20",
+      "plates": "XX00DEM/XX30DEM",
+      "truck": "XX00DEM",
+      "trailer": "XX30DEM",
+      "driver": "DORIAN",
+      "route": "CAREI - SZEKESFEHERVAR",
+      "note": null,
+      "strayK": null,
+      "origin": "CAREI",
+      "stops": [
+        "SZEKESFEHERVAR"
+      ],
+      "priceStatus": "ok",
+      "netMinor": 295281,
+      "vatMinor": 62009,
+      "grossMinor": 357290
+    }
+  ],
+  "counts": {
+    "rows": 27,
+    "ok": 24,
+    "derived": 2,
+    "missing": 1,
+    "withStrayK": 1,
+    "withHandover": 4
+  },
+  "sameDayChain": [
+    {
+      "rows": [
+        141,
+        142
+      ],
+      "date": "2025-09-12",
+      "overlap": false
+    },
+    {
+      "rows": [
+        126,
+        127
+      ],
+      "note": "descărcare 16.08, următoarea încărcare 16.08 = lanț, nu suprapunere"
+    }
+  ],
+  "textCells": {
+    "G133": "număr stocat ca text în xlsx",
+    "B129": "dată stocată ca text dd.mm.yyyy în xlsx"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "flota-costuri",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Flota Costuri – aplicație statică pentru administrator (fără server, date în Google Drive sau local)",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "vendor": "node build/vendor.mjs",
+    "vendor:verify": "node build/vendor.mjs --verify",
+    "dev": "node build/build.mjs --dev",
+    "build": "node build/build.mjs",
+    "test": "node scripts/run-tests.mjs",
+    "test:e2e": "playwright test --config tests/e2e/playwright.config.js",
+    "fixtures": "node scripts/make-fixtures.mjs",
+    "golden": "python3 tests/fixtures/golden/make_expected.py",
+    "check": "node scripts/check.mjs"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "@playwright/test": "1.65.1",
+    "esbuild": "0.28.2"
+  }
+}

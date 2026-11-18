@@ -1,0 +1,5 @@
+{
+  "_comment": "Copiază ca build/privacy-denylist.json (git-ignorat) și pune valorile REALE care nu trebuie să ajungă în depozitul public: străzi, nume, plăcuțe, clienți.",
+  "terms": ["Numele unei străzi reale", "Numele unui client real"],
+  "patterns": []
+}

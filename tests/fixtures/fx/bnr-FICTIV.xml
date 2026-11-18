@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- FICTIV: formă tip BNR (DataSet/Body/Cube/Rate, multiplier pentru HUF) cu valorile pinned; NU sunt cursurile reale ale BNR. -->
+<DataSet xmlns="http://www.bnr.ro/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Header>
+    <Publisher>National Bank of Romania</Publisher>
+    <PublishingDate>2026-10-14</PublishingDate>
+    <MessageType>DR</MessageType>
+  </Header>
+  <Body>
+    <Subject>Reference rates</Subject>
+    <OrigCurrency>RON</OrigCurrency>
+    <Cube date="2026-10-14">
+      <Rate currency="CHF">5.7372</Rate>
+      <Rate currency="CZK">0.2198</Rate>
+      <Rate currency="EUR">5.3442</Rate>
+      <Rate currency="GBP">6.3469</Rate>
+      <Rate currency="HUF" multiplier="100">1.4678</Rate>
+      <Rate currency="PLN">1.2482</Rate>
+      <Rate currency="USD">4.9291</Rate>
+    </Cube>
+    <Cube date="2026-10-13">
+      <Rate currency="EUR">5.3430</Rate>
+      <Rate currency="HUF" multiplier="100">1.4670</Rate>
+    </Cube>
+  </Body>
+</DataSet>

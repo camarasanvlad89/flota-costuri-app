@@ -1,0 +1,11438 @@
+{
+ "_comment": "GENERAT de make_expected.py (Python decimal). Nu edita de mână; regenerează cu python3 tests/fixtures/golden/make_expected.py",
+ "pinned": {
+  "EUR_RON": "5.3442",
+  "EUR_HUF": "364.08",
+  "EUR_PLN": "4.2815"
+ },
+ "mulDiv": [
+  {
+   "a": 354277,
+   "b": 21,
+   "c": 100,
+   "expected": 74398
+  },
+  {
+   "a": 1,
+   "b": 1,
+   "c": 2,
+   "expected": 1
+  },
+  {
+   "a": -1,
+   "b": 1,
+   "c": 2,
+   "expected": -1
+  },
+  {
+   "a": 3,
+   "b": 1,
+   "c": 2,
+   "expected": 2
+  },
+  {
+   "a": -3,
+   "b": 1,
+   "c": 2,
+   "expected": -2
+  },
+  {
+   "a": 5,
+   "b": 1,
+   "c": 10,
+   "expected": 1
+  },
+  {
+   "a": 4,
+   "b": 1,
+   "c": 10,
+   "expected": 0
+  },
+  {
+   "a": 123456,
+   "b": 2700,
+   "c": 12700,
+   "expected": 26247
+  },
+  {
+   "a": 428675,
+   "b": 10000,
+   "c": 12100,
+   "expected": 354277
+  },
+  {
+   "a": 999999999,
+   "b": 7,
+   "c": 3,
+   "expected": 2333333331
+  },
+  {
+   "a": -999999999,
+   "b": 7,
+   "c": 3,
+   "expected": -2333333331
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "c": 7,
+   "expected": 0
+  },
+  {
+   "a": 600001,
+   "b": 2,
+   "c": 3,
+   "expected": 400001
+  },
+  {
+   "a": 1,
+   "b": 1,
+   "c": 3,
+   "expected": 0
+  },
+  {
+   "a": 2,
+   "b": 1,
+   "c": 3,
+   "expected": 1
+  }
+ ],
+ "splitAmounts": [
+  {
+   "entered": "net",
+   "minor": 354277,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 428675,
+    "net": 354277,
+    "vat": 74398
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 428675,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 428675,
+    "net": 354277,
+    "vat": 74398
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 74398,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 428674,
+    "net": 354276,
+    "vat": 74398
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 187660,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 187660,
+    "net": 155091,
+    "vat": 32569
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 253920,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 253920,
+    "net": 209851,
+    "vat": 44069
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 253610,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 306868,
+    "net": 253610,
+    "vat": 53258
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 306868,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 306868,
+    "net": 253610,
+    "vat": 53258
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 123456,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 156789,
+    "net": 123456,
+    "vat": 33333
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 123456,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 123456,
+    "net": 97209,
+    "vat": 26247
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 26247,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 123458,
+    "net": 97211,
+    "vat": 26247
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 100000,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 119000,
+    "net": 100000,
+    "vat": 19000
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 119000,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 119000,
+    "net": 100000,
+    "vat": 19000
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 1,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 1,
+    "net": 1,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 0,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 0,
+    "net": 0,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 1,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 1,
+    "net": 1,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 99999999,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 124999999,
+    "net": 99999999,
+    "vat": 25000000
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 100,
+   "rateBp": 0,
+   "expected": {
+    "gross": 100,
+    "net": 100,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 100,
+   "rateBp": 0,
+   "expected": {
+    "gross": 100,
+    "net": 100,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 61382126,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 68134160,
+    "net": 61382126,
+    "vat": 6752034
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 947,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 4454,
+    "net": 3507,
+    "vat": 947
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 24923414,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 251499905,
+    "net": 226576491,
+    "vat": 24923414
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 16952052,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 97676109,
+    "net": 80724057,
+    "vat": 16952052
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 29822893,
+   "rateBp": 500,
+   "expected": {
+    "gross": 31314038,
+    "net": 29822893,
+    "vat": 1491145
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 4108,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 4930,
+    "net": 4108,
+    "vat": 822
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 10372527,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 55470470,
+    "net": 45097943,
+    "vat": 10372527
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 12168555,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 14967323,
+    "net": 12168555,
+    "vat": 2798768
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 862615,
+   "rateBp": 500,
+   "expected": {
+    "gross": 18114915,
+    "net": 17252300,
+    "vat": 862615
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 944,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 4720,
+    "net": 3776,
+    "vat": 944
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 61697773,
+   "rateBp": 500,
+   "expected": {
+    "gross": 1295653233,
+    "net": 1233955460,
+    "vat": 61697773
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 514931,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 633365,
+    "net": 514931,
+    "vat": 118434
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 785157,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 8636727,
+    "net": 7851570,
+    "vat": 785157
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 1637,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 8754,
+    "net": 7117,
+    "vat": 1637
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 967,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 1160,
+    "net": 967,
+    "vat": 193
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 392038,
+   "rateBp": 0,
+   "expected": {
+    "gross": 392038,
+    "net": 392038,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 949,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 1186,
+    "net": 949,
+    "vat": 237
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 67918262,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 747100882,
+    "net": 679182620,
+    "vat": 67918262
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 2942,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 3530,
+    "net": 2942,
+    "vat": 588
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 184782,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 184782,
+    "net": 153985,
+    "vat": 30797
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 269137,
+   "rateBp": 900,
+   "expected": {
+    "gross": 269137,
+    "net": 246915,
+    "vat": 22222
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 2624,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 2624,
+    "net": 2066,
+    "vat": 558
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 77018085,
+   "rateBp": 0,
+   "expected": {
+    "gross": 77018085,
+    "net": 77018085,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 997748,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 997748,
+    "net": 811177,
+    "vat": 186571
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 415357,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 494275,
+    "net": 415357,
+    "vat": 78918
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 1918,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 1918,
+    "net": 1598,
+    "vat": 320
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 1836,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 11016,
+    "net": 9180,
+    "vat": 1836
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 1185,
+   "rateBp": 900,
+   "expected": {
+    "gross": 1185,
+    "net": 1087,
+    "vat": 98
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 4929,
+   "rateBp": 500,
+   "expected": {
+    "gross": 103509,
+    "net": 98580,
+    "vat": 4929
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 263721,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 263721,
+    "net": 217951,
+    "vat": 45770
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 74657033,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 74657033,
+    "net": 63268672,
+    "vat": 11388361
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 1652,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 1652,
+    "net": 1343,
+    "vat": 309
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 2594,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 13872,
+    "net": 11278,
+    "vat": 2594
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 764293,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 4403783,
+    "net": 3639490,
+    "vat": 764293
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 1717,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 18887,
+    "net": 17170,
+    "vat": 1717
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 374006,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 2000119,
+    "net": 1626113,
+    "vat": 374006
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 284441,
+   "rateBp": 800,
+   "expected": {
+    "gross": 307196,
+    "net": 284441,
+    "vat": 22755
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 2107,
+   "rateBp": 0,
+   "expected": {
+    "gross": 2107,
+    "net": 2107,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 83478044,
+   "rateBp": 800,
+   "expected": {
+    "gross": 90156288,
+    "net": 83478044,
+    "vat": 6678244
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 4697,
+   "rateBp": 0,
+   "expected": {
+    "gross": 4697,
+    "net": 4697,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 548677,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 2580814,
+    "net": 2032137,
+    "vat": 548677
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 50962756,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 514260538,
+    "net": 463297782,
+    "vat": 50962756
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 99311654,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 99311654,
+    "net": 84162419,
+    "vat": 15149235
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 4360,
+   "rateBp": 900,
+   "expected": {
+    "gross": 4752,
+    "net": 4360,
+    "vat": 392
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 18053400,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 84917844,
+    "net": 66864444,
+    "vat": 18053400
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 14025646,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 65972483,
+    "net": 51946837,
+    "vat": 14025646
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 993,
+   "rateBp": 0,
+   "expected": {
+    "gross": 993,
+    "net": 993,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 41540770,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 46110255,
+    "net": 41540770,
+    "vat": 4569485
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 912,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 1158,
+    "net": 912,
+    "vat": 246
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 943546,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 5661276,
+    "net": 4717730,
+    "vat": 943546
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 720048,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 3992993,
+    "net": 3272945,
+    "vat": 720048
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 43366241,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 52473152,
+    "net": 43366241,
+    "vat": 9106911
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 1317,
+   "rateBp": 500,
+   "expected": {
+    "gross": 27657,
+    "net": 26340,
+    "vat": 1317
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 330,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 330,
+    "net": 273,
+    "vat": 57
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 3635,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 18175,
+    "net": 14540,
+    "vat": 3635
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 21182,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 24995,
+    "net": 21182,
+    "vat": 3813
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 246,
+   "rateBp": 0,
+   "expected": {
+    "gross": 246,
+    "net": 246,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 98612337,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 591674022,
+    "net": 493061685,
+    "vat": 98612337
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 1301,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 1301,
+    "net": 1172,
+    "vat": 129
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 941885,
+   "rateBp": 0,
+   "expected": {
+    "gross": 941885,
+    "net": 941885,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 320254,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 393912,
+    "net": 320254,
+    "vat": 73658
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 340617,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 340617,
+    "net": 309652,
+    "vat": 30965
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 830086,
+   "rateBp": 800,
+   "expected": {
+    "gross": 830086,
+    "net": 768598,
+    "vat": 61488
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 83944430,
+   "rateBp": 900,
+   "expected": {
+    "gross": 91499429,
+    "net": 83944430,
+    "vat": 7554999
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 20150864,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 23778020,
+    "net": 20150864,
+    "vat": 3627156
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 66872859,
+   "rateBp": 900,
+   "expected": {
+    "gross": 66872859,
+    "net": 61351247,
+    "vat": 5521612
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 496927,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 3112332,
+    "net": 2615405,
+    "vat": 496927
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 195838,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 231089,
+    "net": 195838,
+    "vat": 35251
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 2987,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 2987,
+    "net": 2390,
+    "vat": 597
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 810879,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 956837,
+    "net": 810879,
+    "vat": 145958
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 68396410,
+   "rateBp": 800,
+   "expected": {
+    "gross": 68396410,
+    "net": 63330009,
+    "vat": 5066401
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 1708,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 2033,
+    "net": 1708,
+    "vat": 325
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 851077,
+   "rateBp": 0,
+   "expected": {
+    "gross": 851077,
+    "net": 851077,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 194082,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 1037917,
+    "net": 843835,
+    "vat": 194082
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 1805,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 11833,
+    "net": 10028,
+    "vat": 1805
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 1972,
+   "rateBp": 500,
+   "expected": {
+    "gross": 2071,
+    "net": 1972,
+    "vat": 99
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 43493073,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 438884646,
+    "net": 395391573,
+    "vat": 43493073
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 606989,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 3979150,
+    "net": 3372161,
+    "vat": 606989
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 1305363,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 1657811,
+    "net": 1305363,
+    "vat": 352448
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 60117155,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 76348787,
+    "net": 60117155,
+    "vat": 16231632
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 2564,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 2564,
+    "net": 2173,
+    "vat": 391
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 605915,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 2850045,
+    "net": 2244130,
+    "vat": 605915
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 1143,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 6338,
+    "net": 5195,
+    "vat": 1143
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 899733,
+   "rateBp": 500,
+   "expected": {
+    "gross": 944720,
+    "net": 899733,
+    "vat": 44987
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 4715446,
+   "rateBp": 0,
+   "expected": {
+    "gross": 4715446,
+    "net": 4715446,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 368675,
+   "rateBp": 800,
+   "expected": {
+    "gross": 4977113,
+    "net": 4608438,
+    "vat": 368675
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 3633,
+   "rateBp": 800,
+   "expected": {
+    "gross": 3633,
+    "net": 3364,
+    "vat": 269
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 280,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 350,
+    "net": 280,
+    "vat": 70
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 485532,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 616626,
+    "net": 485532,
+    "vat": 131094
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 328,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 328,
+    "net": 295,
+    "vat": 33
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 67728541,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 81951535,
+    "net": 67728541,
+    "vat": 14222994
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 987047,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 987047,
+    "net": 897315,
+    "vat": 89732
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 90417970,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 90417970,
+    "net": 71195252,
+    "vat": 19222718
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 14631026,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 95914504,
+    "net": 81283478,
+    "vat": 14631026
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 91979325,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 91979325,
+    "net": 74779939,
+    "vat": 17199386
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 1361,
+   "rateBp": 0,
+   "expected": {
+    "gross": 1361,
+    "net": 1361,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 384068,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 472404,
+    "net": 384068,
+    "vat": 88336
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 65201778,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 657945214,
+    "net": 592743436,
+    "vat": 65201778
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 961501,
+   "rateBp": 500,
+   "expected": {
+    "gross": 961501,
+    "net": 915715,
+    "vat": 45786
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 126933,
+   "rateBp": 0,
+   "expected": {
+    "gross": 126933,
+    "net": 126933,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 3764,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 20129,
+    "net": 16365,
+    "vat": 3764
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 675,
+   "rateBp": 500,
+   "expected": {
+    "gross": 14175,
+    "net": 13500,
+    "vat": 675
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 442772,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 442772,
+    "net": 368977,
+    "vat": 73795
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 75063821,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 75063821,
+    "net": 61027497,
+    "vat": 14036324
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 14215230,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 14215230,
+    "net": 11748124,
+    "vat": 2467106
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 710155,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 781171,
+    "net": 710155,
+    "vat": 71016
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 1340,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 6700,
+    "net": 5360,
+    "vat": 1340
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 369,
+   "rateBp": 900,
+   "expected": {
+    "gross": 369,
+    "net": 339,
+    "vat": 30
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 427,
+   "rateBp": 900,
+   "expected": {
+    "gross": 465,
+    "net": 427,
+    "vat": 38
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 56488304,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 56488304,
+    "net": 44478980,
+    "vat": 12009324
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 3733,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 24472,
+    "net": 20739,
+    "vat": 3733
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 23271903,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 116359515,
+    "net": 93087612,
+    "vat": 23271903
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 904,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 1130,
+    "net": 904,
+    "vat": 226
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 65753917,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 65753917,
+    "net": 54342080,
+    "vat": 11411837
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 40228702,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 40228702,
+    "net": 36242074,
+    "vat": 3986628
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 119879,
+   "rateBp": 500,
+   "expected": {
+    "gross": 125873,
+    "net": 119879,
+    "vat": 5994
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 81081132,
+   "rateBp": 900,
+   "expected": {
+    "gross": 88378434,
+    "net": 81081132,
+    "vat": 7297302
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 2180,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 2180,
+    "net": 1847,
+    "vat": 333
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 54880502,
+   "rateBp": 800,
+   "expected": {
+    "gross": 59270942,
+    "net": 54880502,
+    "vat": 4390440
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 2775,
+   "rateBp": 500,
+   "expected": {
+    "gross": 2914,
+    "net": 2775,
+    "vat": 139
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 306668,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 306668,
+    "net": 253445,
+    "vat": 53223
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 3933,
+   "rateBp": 500,
+   "expected": {
+    "gross": 82593,
+    "net": 78660,
+    "vat": 3933
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 75818750,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 405465489,
+    "net": 329646739,
+    "vat": 75818750
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 8785769,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 8785769,
+    "net": 7142902,
+    "vat": 1642867
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 76367826,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 90114035,
+    "net": 76367826,
+    "vat": 13746209
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 630970,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 700377,
+    "net": 630970,
+    "vat": 69407
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 74195,
+   "rateBp": 500,
+   "expected": {
+    "gross": 1558095,
+    "net": 1483900,
+    "vat": 74195
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 822991,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 822991,
+    "net": 658393,
+    "vat": 164598
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 229845,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 1229171,
+    "net": 999326,
+    "vat": 229845
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 2844,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 3441,
+    "net": 2844,
+    "vat": 597
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 100750,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 503750,
+    "net": 403000,
+    "vat": 100750
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 72318342,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 72318342,
+    "net": 60771716,
+    "vat": 11546626
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 26341308,
+   "rateBp": 900,
+   "expected": {
+    "gross": 26341308,
+    "net": 24166338,
+    "vat": 2174970
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 92121,
+   "rateBp": 900,
+   "expected": {
+    "gross": 100412,
+    "net": 92121,
+    "vat": 8291
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 918928,
+   "rateBp": 800,
+   "expected": {
+    "gross": 918928,
+    "net": 850859,
+    "vat": 68069
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 2954,
+   "rateBp": 900,
+   "expected": {
+    "gross": 35776,
+    "net": 32822,
+    "vat": 2954
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 24151216,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 24151216,
+    "net": 20295139,
+    "vat": 3856077
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 800033,
+   "rateBp": 500,
+   "expected": {
+    "gross": 800033,
+    "net": 761936,
+    "vat": 38097
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 676,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 825,
+    "net": 676,
+    "vat": 149
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 4891,
+   "rateBp": 0,
+   "expected": {
+    "gross": 4891,
+    "net": 4891,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 33518507,
+   "rateBp": 900,
+   "expected": {
+    "gross": 405946363,
+    "net": 372427856,
+    "vat": 33518507
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 64457117,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 344705452,
+    "net": 280248335,
+    "vat": 64457117
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 1970,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 2463,
+    "net": 1970,
+    "vat": 493
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 67429325,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 741722575,
+    "net": 674293250,
+    "vat": 67429325
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 184609,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 184609,
+    "net": 145361,
+    "vat": 39248
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 23245539,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 23245539,
+    "net": 19534066,
+    "vat": 3711473
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 423,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 423,
+    "net": 381,
+    "vat": 42
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 324048,
+   "rateBp": 800,
+   "expected": {
+    "gross": 349972,
+    "net": 324048,
+    "vat": 25924
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 66426102,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 416037165,
+    "net": 349611063,
+    "vat": 66426102
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 27107632,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 32529158,
+    "net": 27107632,
+    "vat": 5421526
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 55321084,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 55321084,
+    "net": 46882275,
+    "vat": 8438809
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 3629,
+   "rateBp": 0,
+   "expected": {
+    "gross": 3629,
+    "net": 3629,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 147951,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 147951,
+    "net": 120285,
+    "vat": 27666
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 4011610,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 4854048,
+    "net": 4011610,
+    "vat": 842438
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 16459515,
+   "rateBp": 0,
+   "expected": {
+    "gross": 16459515,
+    "net": 16459515,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 428584,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 2142920,
+    "net": 1714336,
+    "vat": 428584
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 73959101,
+   "rateBp": 900,
+   "expected": {
+    "gross": 80615420,
+    "net": 73959101,
+    "vat": 6656319
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 430104,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 537630,
+    "net": 430104,
+    "vat": 107526
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 281218,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 1687308,
+    "net": 1406090,
+    "vat": 281218
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 717971,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 4496766,
+    "net": 3778795,
+    "vat": 717971
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 2588,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 2588,
+    "net": 2353,
+    "vat": 235
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 2068,
+   "rateBp": 900,
+   "expected": {
+    "gross": 2068,
+    "net": 1897,
+    "vat": 171
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 153362,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 191703,
+    "net": 153362,
+    "vat": 38341
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 485,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 2425,
+    "net": 1940,
+    "vat": 485
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 298430,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 379006,
+    "net": 298430,
+    "vat": 80576
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 4242,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 5218,
+    "net": 4242,
+    "vat": 976
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 716120,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 845022,
+    "net": 716120,
+    "vat": 128902
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 614667,
+   "rateBp": 500,
+   "expected": {
+    "gross": 12908007,
+    "net": 12293340,
+    "vat": 614667
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 2084,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 13052,
+    "net": 10968,
+    "vat": 2084
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 4758,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 5710,
+    "net": 4758,
+    "vat": 952
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 105752,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 117385,
+    "net": 105752,
+    "vat": 11633
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 315700,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 1578500,
+    "net": 1262800,
+    "vat": 315700
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 40055523,
+   "rateBp": 0,
+   "expected": {
+    "gross": 40055523,
+    "net": 40055523,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 4086,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 4862,
+    "net": 4086,
+    "vat": 776
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 212968,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 2149041,
+    "net": 1936073,
+    "vat": 212968
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 22876771,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 22876771,
+    "net": 18906422,
+    "vat": 3970349
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 688770,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 3819543,
+    "net": 3130773,
+    "vat": 688770
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 35787748,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 168334963,
+    "net": 132547215,
+    "vat": 35787748
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 805445,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 894044,
+    "net": 805445,
+    "vat": 88599
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 17716552,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 17716552,
+    "net": 15014027,
+    "vat": 2702525
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 1568,
+   "rateBp": 0,
+   "expected": {
+    "gross": 1568,
+    "net": 1568,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 127,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 141,
+    "net": 127,
+    "vat": 14
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 73095530,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 73095530,
+    "net": 66450482,
+    "vat": 6645048
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 454564,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 568205,
+    "net": 454564,
+    "vat": 113641
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 509686,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 2936762,
+    "net": 2427076,
+    "vat": 509686
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 593225,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 700006,
+    "net": 593225,
+    "vat": 106781
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 744,
+   "rateBp": 500,
+   "expected": {
+    "gross": 781,
+    "net": 744,
+    "vat": 37
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 2106,
+   "rateBp": 500,
+   "expected": {
+    "gross": 44226,
+    "net": 42120,
+    "vat": 2106
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 964,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 964,
+    "net": 759,
+    "vat": 205
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 18477058,
+   "rateBp": 0,
+   "expected": {
+    "gross": 18477058,
+    "net": 18477058,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 1642,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 1642,
+    "net": 1357,
+    "vat": 285
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 428689,
+   "rateBp": 800,
+   "expected": {
+    "gross": 462984,
+    "net": 428689,
+    "vat": 34295
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 23066740,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 27680088,
+    "net": 23066740,
+    "vat": 4613348
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 384,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 384,
+    "net": 346,
+    "vat": 38
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 51441031,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 61729237,
+    "net": 51441031,
+    "vat": 10288206
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 793625,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 952350,
+    "net": 793625,
+    "vat": 158725
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 13235399,
+   "rateBp": 800,
+   "expected": {
+    "gross": 13235399,
+    "net": 12254999,
+    "vat": 980400
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 679883,
+   "rateBp": 0,
+   "expected": {
+    "gross": 679883,
+    "net": 679883,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 175869,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 175869,
+    "net": 138480,
+    "vat": 37389
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 68543018,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 81566191,
+    "net": 68543018,
+    "vat": 13023173
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 901941,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 5001673,
+    "net": 4099732,
+    "vat": 901941
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 100682,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 100682,
+    "net": 81855,
+    "vat": 18827
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 13443903,
+   "rateBp": 800,
+   "expected": {
+    "gross": 181492691,
+    "net": 168048788,
+    "vat": 13443903
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 8525854,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 10827835,
+    "net": 8525854,
+    "vat": 2301981
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 51555906,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 309335436,
+    "net": 257779530,
+    "vat": 51555906
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 18163148,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 119069526,
+    "net": 100906378,
+    "vat": 18163148
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 80598055,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 99135608,
+    "net": 80598055,
+    "vat": 18537553
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 787711,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 984639,
+    "net": 787711,
+    "vat": 196928
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 292426,
+   "rateBp": 900,
+   "expected": {
+    "gross": 3541604,
+    "net": 3249178,
+    "vat": 292426
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 471982,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 580538,
+    "net": 471982,
+    "vat": 108556
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 827307,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 827307,
+    "net": 752097,
+    "vat": 75210
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 684363,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 684363,
+    "net": 565589,
+    "vat": 118774
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 501423,
+   "rateBp": 800,
+   "expected": {
+    "gross": 541537,
+    "net": 501423,
+    "vat": 40114
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 209804,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 209804,
+    "net": 173392,
+    "vat": 36412
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 59794205,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 74742756,
+    "net": 59794205,
+    "vat": 14948551
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 8329445,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 8329445,
+    "net": 6771907,
+    "vat": 1557538
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 92713277,
+   "rateBp": 800,
+   "expected": {
+    "gross": 1251629240,
+    "net": 1158915963,
+    "vat": 92713277
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 552,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 2952,
+    "net": 2400,
+    "vat": 552
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 798113,
+   "rateBp": 500,
+   "expected": {
+    "gross": 16760373,
+    "net": 15962260,
+    "vat": 798113
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 48195105,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 226695494,
+    "net": 178500389,
+    "vat": 48195105
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 483077,
+   "rateBp": 900,
+   "expected": {
+    "gross": 5850599,
+    "net": 5367522,
+    "vat": 483077
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 500298,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 2501490,
+    "net": 2001192,
+    "vat": 500298
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 10402143,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 10402143,
+    "net": 8526347,
+    "vat": 1875796
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 19678299,
+   "rateBp": 500,
+   "expected": {
+    "gross": 413244279,
+    "net": 393565980,
+    "vat": 19678299
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 48003959,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 266203773,
+    "net": 218199814,
+    "vat": 48003959
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 89669825,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 561616272,
+    "net": 471946447,
+    "vat": 89669825
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 23114,
+   "rateBp": 500,
+   "expected": {
+    "gross": 24270,
+    "net": 23114,
+    "vat": 1156
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 95578,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 95578,
+    "net": 76462,
+    "vat": 19116
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 1699,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 1886,
+    "net": 1699,
+    "vat": 187
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 45250738,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 45250738,
+    "net": 35630502,
+    "vat": 9620236
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 1381,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 1643,
+    "net": 1381,
+    "vat": 262
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 845433,
+   "rateBp": 800,
+   "expected": {
+    "gross": 11413346,
+    "net": 10567913,
+    "vat": 845433
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 599,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 3594,
+    "net": 2995,
+    "vat": 599
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 4693,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 27041,
+    "net": 22348,
+    "vat": 4693
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 24461,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 146766,
+    "net": 122305,
+    "vat": 24461
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 502893,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 2514465,
+    "net": 2011572,
+    "vat": 502893
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 51521642,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 322688179,
+    "net": 271166537,
+    "vat": 51521642
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 1934,
+   "rateBp": 800,
+   "expected": {
+    "gross": 2089,
+    "net": 1934,
+    "vat": 155
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 49140705,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 59951660,
+    "net": 49140705,
+    "vat": 10810955
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 3026,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 3601,
+    "net": 3026,
+    "vat": 575
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 3960,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 25960,
+    "net": 22000,
+    "vat": 3960
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 500756,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 3282734,
+    "net": 2781978,
+    "vat": 500756
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 4089,
+   "rateBp": 500,
+   "expected": {
+    "gross": 4089,
+    "net": 3894,
+    "vat": 195
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 2178,
+   "rateBp": 900,
+   "expected": {
+    "gross": 2178,
+    "net": 1998,
+    "vat": 180
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 87966239,
+   "rateBp": 800,
+   "expected": {
+    "gross": 87966239,
+    "net": 81450221,
+    "vat": 6516018
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 1668,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 2035,
+    "net": 1668,
+    "vat": 367
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 55348126,
+   "rateBp": 500,
+   "expected": {
+    "gross": 1162310646,
+    "net": 1106962520,
+    "vat": 55348126
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 2672,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 14289,
+    "net": 11617,
+    "vat": 2672
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 3189143,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 3858863,
+    "net": 3189143,
+    "vat": 669720
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 4585,
+   "rateBp": 500,
+   "expected": {
+    "gross": 4814,
+    "net": 4585,
+    "vat": 229
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 1710,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 11210,
+    "net": 9500,
+    "vat": 1710
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 162385,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 162385,
+    "net": 127862,
+    "vat": 34523
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 704245,
+   "rateBp": 900,
+   "expected": {
+    "gross": 704245,
+    "net": 646096,
+    "vat": 58149
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 911896,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 1094275,
+    "net": 911896,
+    "vat": 182379
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 3730,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 37639,
+    "net": 33909,
+    "vat": 3730
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 38697067,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 46823451,
+    "net": 38697067,
+    "vat": 8126384
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 97124309,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 115577928,
+    "net": 97124309,
+    "vat": 18453619
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 70,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 70,
+    "net": 56,
+    "vat": 14
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 251,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 1342,
+    "net": 1091,
+    "vat": 251
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 478110,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 573732,
+    "net": 478110,
+    "vat": 95622
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 566497,
+   "rateBp": 900,
+   "expected": {
+    "gross": 6860908,
+    "net": 6294411,
+    "vat": 566497
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 26984212,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 144306873,
+    "net": 117322661,
+    "vat": 26984212
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 2209,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 2209,
+    "net": 1767,
+    "vat": 442
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 630990,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 6940890,
+    "net": 6309900,
+    "vat": 630990
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 115291,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 140655,
+    "net": 115291,
+    "vat": 25364
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 355386,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 433571,
+    "net": 355386,
+    "vat": 78185
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 4747,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 4747,
+    "net": 3859,
+    "vat": 888
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 4786,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 4786,
+    "net": 3955,
+    "vat": 831
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 424830,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 424830,
+    "net": 382730,
+    "vat": 42100
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 48495696,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 48495696,
+    "net": 40752686,
+    "vat": 7743010
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 8002572,
+   "rateBp": 500,
+   "expected": {
+    "gross": 8402701,
+    "net": 8002572,
+    "vat": 400129
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 643,
+   "rateBp": 800,
+   "expected": {
+    "gross": 694,
+    "net": 643,
+    "vat": 51
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 4062,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 22526,
+    "net": 18464,
+    "vat": 4062
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 500,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 605,
+    "net": 500,
+    "vat": 105
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 27598175,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 147590240,
+    "net": 119992065,
+    "vat": 27598175
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 601118,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 601118,
+    "net": 541548,
+    "vat": 59570
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 3887,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 25481,
+    "net": 21594,
+    "vat": 3887
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 4270,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 5167,
+    "net": 4270,
+    "vat": 897
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 4554,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 5009,
+    "net": 4554,
+    "vat": 455
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 83205793,
+   "rateBp": 500,
+   "expected": {
+    "gross": 83205793,
+    "net": 79243612,
+    "vat": 3962181
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 4428,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 5446,
+    "net": 4428,
+    "vat": 1018
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 57154672,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 57154672,
+    "net": 48436163,
+    "vat": 8718509
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 60537039,
+   "rateBp": 800,
+   "expected": {
+    "gross": 60537039,
+    "net": 56052814,
+    "vat": 4484225
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 4066,
+   "rateBp": 0,
+   "expected": {
+    "gross": 4066,
+    "net": 4066,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 3710,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 22260,
+    "net": 18550,
+    "vat": 3710
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 632866,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 772097,
+    "net": 632866,
+    "vat": 139231
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 437861,
+   "rateBp": 900,
+   "expected": {
+    "gross": 5302983,
+    "net": 4865122,
+    "vat": 437861
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 450814,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 549993,
+    "net": 450814,
+    "vat": 99179
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 306141,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 2006924,
+    "net": 1700783,
+    "vat": 306141
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 78320011,
+   "rateBp": 0,
+   "expected": {
+    "gross": 78320011,
+    "net": 78320011,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 2581,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 2581,
+    "net": 2133,
+    "vat": 448
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 3611,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 3611,
+    "net": 2960,
+    "vat": 651
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 3034,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 3853,
+    "net": 3034,
+    "vat": 819
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 82245297,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 386857508,
+    "net": 304612211,
+    "vat": 82245297
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 6746529,
+   "rateBp": 500,
+   "expected": {
+    "gross": 7083855,
+    "net": 6746529,
+    "vat": 337326
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 1210,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 5691,
+    "net": 4481,
+    "vat": 1210
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 333288,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 2184888,
+    "net": 1851600,
+    "vat": 333288
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 9472786,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 9472786,
+    "net": 8611624,
+    "vat": 861162
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 44130048,
+   "rateBp": 900,
+   "expected": {
+    "gross": 44130048,
+    "net": 40486283,
+    "vat": 3643765
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 88198591,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 88198591,
+    "net": 72293927,
+    "vat": 15904664
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 4748,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 5650,
+    "net": 4748,
+    "vat": 902
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 617778,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 3706668,
+    "net": 3088890,
+    "vat": 617778
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 14030107,
+   "rateBp": 900,
+   "expected": {
+    "gross": 14030107,
+    "net": 12871658,
+    "vat": 1158449
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 14552334,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 91143566,
+    "net": 76591232,
+    "vat": 14552334
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 915658,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 915658,
+    "net": 744437,
+    "vat": 171221
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 603,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 736,
+    "net": 603,
+    "vat": 133
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 263192,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 1516487,
+    "net": 1253295,
+    "vat": 263192
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 279863,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 1496659,
+    "net": 1216796,
+    "vat": 279863
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 1212,
+   "rateBp": 0,
+   "expected": {
+    "gross": 1212,
+    "net": 1212,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 651724,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 651724,
+    "net": 587139,
+    "vat": 64585
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 66188748,
+   "rateBp": 500,
+   "expected": {
+    "gross": 1389963708,
+    "net": 1323774960,
+    "vat": 66188748
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 493581,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 493581,
+    "net": 448710,
+    "vat": 44871
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 4086,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 22659,
+    "net": 18573,
+    "vat": 4086
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 716757,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 716757,
+    "net": 564376,
+    "vat": 152381
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 99370422,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 99370422,
+    "net": 83504556,
+    "vat": 15865866
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 1987,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 11922,
+    "net": 9935,
+    "vat": 1987
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 88099717,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 107481655,
+    "net": 88099717,
+    "vat": 19381938
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 79232,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 87155,
+    "net": 79232,
+    "vat": 7923
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 47541945,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 47541945,
+    "net": 43219950,
+    "vat": 4321995
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 17867119,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 21797885,
+    "net": 17867119,
+    "vat": 3930766
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 77151575,
+   "rateBp": 500,
+   "expected": {
+    "gross": 81009154,
+    "net": 77151575,
+    "vat": 3857579
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 680431,
+   "rateBp": 900,
+   "expected": {
+    "gross": 8240775,
+    "net": 7560344,
+    "vat": 680431
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 1234,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 1234,
+    "net": 1122,
+    "vat": 112
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 4331,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 28392,
+    "net": 24061,
+    "vat": 4331
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 73566746,
+   "rateBp": 900,
+   "expected": {
+    "gross": 73566746,
+    "net": 67492428,
+    "vat": 6074318
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 94764844,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 113717813,
+    "net": 94764844,
+    "vat": 18952969
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 3634,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 3634,
+    "net": 2907,
+    "vat": 727
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 9595908,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 11707008,
+    "net": 9595908,
+    "vat": 2111100
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 36,
+   "rateBp": 500,
+   "expected": {
+    "gross": 756,
+    "net": 720,
+    "vat": 36
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 3059,
+   "rateBp": 900,
+   "expected": {
+    "gross": 37048,
+    "net": 33989,
+    "vat": 3059
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 3405351,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 3405351,
+    "net": 2724281,
+    "vat": 681070
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 76112164,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 76112164,
+    "net": 68569517,
+    "vat": 7542647
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 92311099,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 92311099,
+    "net": 76290164,
+    "vat": 16020935
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 4529,
+   "rateBp": 0,
+   "expected": {
+    "gross": 4529,
+    "net": 4529,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 501204,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 2887890,
+    "net": 2386686,
+    "vat": 501204
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 83699,
+   "rateBp": 0,
+   "expected": {
+    "gross": 83699,
+    "net": 83699,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 246424,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 2486642,
+    "net": 2240218,
+    "vat": 246424
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 82997838,
+   "rateBp": 500,
+   "expected": {
+    "gross": 1742954598,
+    "net": 1659956760,
+    "vat": 82997838
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 4420,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 48620,
+    "net": 44200,
+    "vat": 4420
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 85045,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 425225,
+    "net": 340180,
+    "vat": 85045
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 83270995,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 105754164,
+    "net": 83270995,
+    "vat": 22483169
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 132284,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 828516,
+    "net": 696232,
+    "vat": 132284
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 695950,
+   "rateBp": 0,
+   "expected": {
+    "gross": 695950,
+    "net": 695950,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 2788,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 3373,
+    "net": 2788,
+    "vat": 585
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 339288,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 417324,
+    "net": 339288,
+    "vat": 78036
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 469654,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 563585,
+    "net": 469654,
+    "vat": 93931
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 559623,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 3505007,
+    "net": 2945384,
+    "vat": 559623
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 58736584,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 314113036,
+    "net": 255376452,
+    "vat": 58736584
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 728,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 859,
+    "net": 728,
+    "vat": 131
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 41038,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 451418,
+    "net": 410380,
+    "vat": 41038
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 44820652,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 44820652,
+    "net": 35856522,
+    "vat": 8964130
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 553312,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 658441,
+    "net": 553312,
+    "vat": 105129
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 83928239,
+   "rateBp": 500,
+   "expected": {
+    "gross": 1762493019,
+    "net": 1678564780,
+    "vat": 83928239
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 879824,
+   "rateBp": 800,
+   "expected": {
+    "gross": 950210,
+    "net": 879824,
+    "vat": 70386
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 4708,
+   "rateBp": 0,
+   "expected": {
+    "gross": 4708,
+    "net": 4708,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 2156,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 23716,
+    "net": 21560,
+    "vat": 2156
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 66156889,
+   "rateBp": 0,
+   "expected": {
+    "gross": 66156889,
+    "net": 66156889,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 313590,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 344949,
+    "net": 313590,
+    "vat": 31359
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 69261788,
+   "rateBp": 0,
+   "expected": {
+    "gross": 69261788,
+    "net": 69261788,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 680125,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 680125,
+    "net": 618295,
+    "vat": 61830
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 27758547,
+   "rateBp": 800,
+   "expected": {
+    "gross": 374740385,
+    "net": 346981838,
+    "vat": 27758547
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 4524,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 5474,
+    "net": 4524,
+    "vat": 950
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 104298,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 625788,
+    "net": 521490,
+    "vat": 104298
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 231,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 254,
+    "net": 231,
+    "vat": 23
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 29862,
+   "rateBp": 800,
+   "expected": {
+    "gross": 29862,
+    "net": 27650,
+    "vat": 2212
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 14687157,
+   "rateBp": 500,
+   "expected": {
+    "gross": 15421515,
+    "net": 14687157,
+    "vat": 734358
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 7287947,
+   "rateBp": 900,
+   "expected": {
+    "gross": 7287947,
+    "net": 6686190,
+    "vat": 601757
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 81096,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 81096,
+    "net": 67580,
+    "vat": 13516
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 693274,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 693274,
+    "net": 587520,
+    "vat": 105754
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 16546189,
+   "rateBp": 900,
+   "expected": {
+    "gross": 200392733,
+    "net": 183846544,
+    "vat": 16546189
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 22755982,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 28900097,
+    "net": 22755982,
+    "vat": 6144115
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 2005,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 2005,
+    "net": 1806,
+    "vat": 199
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 184706,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 221647,
+    "net": 184706,
+    "vat": 36941
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 4647,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 46892,
+    "net": 42245,
+    "vat": 4647
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 3807,
+   "rateBp": 900,
+   "expected": {
+    "gross": 4150,
+    "net": 3807,
+    "vat": 343
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 63451868,
+   "rateBp": 900,
+   "expected": {
+    "gross": 63451868,
+    "net": 58212723,
+    "vat": 5239145
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 33078022,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 363858242,
+    "net": 330780220,
+    "vat": 33078022
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 82105811,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 96884857,
+    "net": 82105811,
+    "vat": 14779046
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 4340,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 5208,
+    "net": 4340,
+    "vat": 868
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 174948,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 822904,
+    "net": 647956,
+    "vat": 174948
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 896922,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 896922,
+    "net": 808038,
+    "vat": 88884
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 748,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 748,
+    "net": 623,
+    "vat": 125
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 3904,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 3904,
+    "net": 3308,
+    "vat": 596
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 4473,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 25773,
+    "net": 21300,
+    "vat": 4473
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 33100273,
+   "rateBp": 900,
+   "expected": {
+    "gross": 400881084,
+    "net": 367780811,
+    "vat": 33100273
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 70484063,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 331536148,
+    "net": 261052085,
+    "vat": 70484063
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 634978,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 634978,
+    "net": 507982,
+    "vat": 126996
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 4891,
+   "rateBp": 0,
+   "expected": {
+    "gross": 4891,
+    "net": 4891,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 43592206,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 261553236,
+    "net": 217961030,
+    "vat": 43592206
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 654533,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 3272665,
+    "net": 2618132,
+    "vat": 654533
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 79331547,
+   "rateBp": 500,
+   "expected": {
+    "gross": 1665962487,
+    "net": 1586630940,
+    "vat": 79331547
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 994,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 5727,
+    "net": 4733,
+    "vat": 994
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 4378,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 4378,
+    "net": 3559,
+    "vat": 819
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 731279,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 731279,
+    "net": 594536,
+    "vat": 136743
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 4221924,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 4686336,
+    "net": 4221924,
+    "vat": 464412
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 72348555,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 72348555,
+    "net": 65771414,
+    "vat": 6577141
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 46845,
+   "rateBp": 900,
+   "expected": {
+    "gross": 46845,
+    "net": 42977,
+    "vat": 3868
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 3504,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 3889,
+    "net": 3504,
+    "vat": 385
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 3083,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 19309,
+    "net": 16226,
+    "vat": 3083
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 1310,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 13219,
+    "net": 11909,
+    "vat": 1310
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 66143745,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 66143745,
+    "net": 60130677,
+    "vat": 6013068
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 798,
+   "rateBp": 500,
+   "expected": {
+    "gross": 16758,
+    "net": 15960,
+    "vat": 798
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 623665,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 6293347,
+    "net": 5669682,
+    "vat": 623665
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 27387907,
+   "rateBp": 900,
+   "expected": {
+    "gross": 29852819,
+    "net": 27387907,
+    "vat": 2464912
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 548180,
+   "rateBp": 900,
+   "expected": {
+    "gross": 6639069,
+    "net": 6090889,
+    "vat": 548180
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 87190636,
+   "rateBp": 900,
+   "expected": {
+    "gross": 87190636,
+    "net": 79991409,
+    "vat": 7199227
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 4519,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 4519,
+    "net": 3674,
+    "vat": 845
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 65934144,
+   "rateBp": 0,
+   "expected": {
+    "gross": 65934144,
+    "net": 65934144,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 997538,
+   "rateBp": 900,
+   "expected": {
+    "gross": 12081294,
+    "net": 11083756,
+    "vat": 997538
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 2721,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 2721,
+    "net": 2474,
+    "vat": 247
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 64718439,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 77014942,
+    "net": 64718439,
+    "vat": 12296503
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 683490,
+   "rateBp": 500,
+   "expected": {
+    "gross": 717665,
+    "net": 683490,
+    "vat": 34175
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 3862,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 18166,
+    "net": 14304,
+    "vat": 3862
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 97087577,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 636463005,
+    "net": 539375428,
+    "vat": 97087577
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 716854,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 716854,
+    "net": 564452,
+    "vat": 152402
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 92474713,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 111894403,
+    "net": 92474713,
+    "vat": 19419690
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 315,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 394,
+    "net": 315,
+    "vat": 79
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 99285161,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 99285161,
+    "net": 78177292,
+    "vat": 21107869
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 68991,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 696182,
+    "net": 627191,
+    "vat": 68991
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 4339,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 26034,
+    "net": 21695,
+    "vat": 4339
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 4558,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 5561,
+    "net": 4558,
+    "vat": 1003
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 93001,
+   "rateBp": 900,
+   "expected": {
+    "gross": 93001,
+    "net": 85322,
+    "vat": 7679
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 4811,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 5869,
+    "net": 4811,
+    "vat": 1058
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 8288919,
+   "rateBp": 500,
+   "expected": {
+    "gross": 8288919,
+    "net": 7894209,
+    "vat": 394710
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 2002,
+   "rateBp": 0,
+   "expected": {
+    "gross": 2002,
+    "net": 2002,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 4992,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 26696,
+    "net": 21704,
+    "vat": 4992
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 601764,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 601764,
+    "net": 497326,
+    "vat": 104438
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 3544,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 38984,
+    "net": 35440,
+    "vat": 3544
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 87872924,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 87872924,
+    "net": 72622251,
+    "vat": 15250673
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 823501,
+   "rateBp": 500,
+   "expected": {
+    "gross": 864676,
+    "net": 823501,
+    "vat": 41175
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 34686468,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 43358085,
+    "net": 34686468,
+    "vat": 8671617
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 4279,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 22883,
+    "net": 18604,
+    "vat": 4279
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 543,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 3129,
+    "net": 2586,
+    "vat": 543
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 14173361,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 16724566,
+    "net": 14173361,
+    "vat": 2551205
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 37675718,
+   "rateBp": 800,
+   "expected": {
+    "gross": 40689775,
+    "net": 37675718,
+    "vat": 3014057
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 75302079,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 91115516,
+    "net": 75302079,
+    "vat": 15813437
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 4068,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 22559,
+    "net": 18491,
+    "vat": 4068
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 69639543,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 372420165,
+    "net": 302780622,
+    "vat": 69639543
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 67354723,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 81499215,
+    "net": 67354723,
+    "vat": 14144492
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 442397,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 2770802,
+    "net": 2328405,
+    "vat": 442397
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 12035,
+   "rateBp": 800,
+   "expected": {
+    "gross": 12035,
+    "net": 11144,
+    "vat": 891
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 469679,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 469679,
+    "net": 375743,
+    "vat": 93936
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 3151,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 3750,
+    "net": 3151,
+    "vat": 599
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 4808,
+   "rateBp": 500,
+   "expected": {
+    "gross": 100968,
+    "net": 96160,
+    "vat": 4808
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 4842,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 5810,
+    "net": 4842,
+    "vat": 968
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 24782453,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 30482417,
+    "net": 24782453,
+    "vat": 5699964
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 921226,
+   "rateBp": 500,
+   "expected": {
+    "gross": 19345746,
+    "net": 18424520,
+    "vat": 921226
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 1966,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 1966,
+    "net": 1666,
+    "vat": 300
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 66421783,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 416010115,
+    "net": 349588332,
+    "vat": 66421783
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 56887274,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 56887274,
+    "net": 46628913,
+    "vat": 10258361
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 361,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 430,
+    "net": 361,
+    "vat": 69
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 4077,
+   "rateBp": 800,
+   "expected": {
+    "gross": 55040,
+    "net": 50963,
+    "vat": 4077
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 2152,
+   "rateBp": 900,
+   "expected": {
+    "gross": 2346,
+    "net": 2152,
+    "vat": 194
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 727935,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 727935,
+    "net": 591817,
+    "vat": 136118
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 2550,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 13637,
+    "net": 11087,
+    "vat": 2550
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 130735,
+   "rateBp": 900,
+   "expected": {
+    "gross": 142501,
+    "net": 130735,
+    "vat": 11766
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 81442335,
+   "rateBp": 0,
+   "expected": {
+    "gross": 81442335,
+    "net": 81442335,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 402597,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 402597,
+    "net": 341184,
+    "vat": 61413
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 547970,
+   "rateBp": 900,
+   "expected": {
+    "gross": 597287,
+    "net": 547970,
+    "vat": 49317
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 68211218,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 364781731,
+    "net": 296570513,
+    "vat": 68211218
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 50441251,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 50441251,
+    "net": 40353001,
+    "vat": 10088250
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 2977,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 2977,
+    "net": 2481,
+    "vat": 496
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 1273,
+   "rateBp": 500,
+   "expected": {
+    "gross": 1273,
+    "net": 1212,
+    "vat": 61
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 933637,
+   "rateBp": 500,
+   "expected": {
+    "gross": 19606377,
+    "net": 18672740,
+    "vat": 933637
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 4894,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 4894,
+    "net": 4147,
+    "vat": 747
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 203285,
+   "rateBp": 800,
+   "expected": {
+    "gross": 219548,
+    "net": 203285,
+    "vat": 16263
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 52602573,
+   "rateBp": 500,
+   "expected": {
+    "gross": 1104654033,
+    "net": 1052051460,
+    "vat": 52602573
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 1687,
+   "rateBp": 900,
+   "expected": {
+    "gross": 1839,
+    "net": 1687,
+    "vat": 152
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 958242,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 10540662,
+    "net": 9582420,
+    "vat": 958242
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 340840,
+   "rateBp": 800,
+   "expected": {
+    "gross": 4601340,
+    "net": 4260500,
+    "vat": 340840
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 912180,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 1140225,
+    "net": 912180,
+    "vat": 228045
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 97135759,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 97135759,
+    "net": 79619475,
+    "vat": 17516284
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 464637,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 515747,
+    "net": 464637,
+    "vat": 51110
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 87806660,
+   "rateBp": 800,
+   "expected": {
+    "gross": 1185389910,
+    "net": 1097583250,
+    "vat": 87806660
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 878159,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 8861423,
+    "net": 7983264,
+    "vat": 878159
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 553053,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 702377,
+    "net": 553053,
+    "vat": 149324
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 89620045,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 421546138,
+    "net": 331926093,
+    "vat": 89620045
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 3336,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 18500,
+    "net": 15164,
+    "vat": 3336
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 61744159,
+   "rateBp": 500,
+   "expected": {
+    "gross": 64831367,
+    "net": 61744159,
+    "vat": 3087208
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 247793,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 247793,
+    "net": 223237,
+    "vat": 24556
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 95426428,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 115465978,
+    "net": 95426428,
+    "vat": 20039550
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 1732,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 1732,
+    "net": 1560,
+    "vat": 172
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 601874,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 6620614,
+    "net": 6018740,
+    "vat": 601874
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 124244,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 715882,
+    "net": 591638,
+    "vat": 124244
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 916,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 5737,
+    "net": 4821,
+    "vat": 916
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 364153,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 447908,
+    "net": 364153,
+    "vat": 83755
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 865644,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 5193864,
+    "net": 4328220,
+    "vat": 865644
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 6555965,
+   "rateBp": 800,
+   "expected": {
+    "gross": 88505528,
+    "net": 81949563,
+    "vat": 6555965
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 4416,
+   "rateBp": 800,
+   "expected": {
+    "gross": 59616,
+    "net": 55200,
+    "vat": 4416
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 162061,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 162061,
+    "net": 127607,
+    "vat": 34454
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 3499,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 38489,
+    "net": 34990,
+    "vat": 3499
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 84503602,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 93798998,
+    "net": 84503602,
+    "vat": 9295396
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 94924473,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 94924473,
+    "net": 77174368,
+    "vat": 17750105
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 99432113,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 99432113,
+    "net": 78293002,
+    "vat": 21139111
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 64474553,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 80593191,
+    "net": 64474553,
+    "vat": 16118638
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 820557,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 4923342,
+    "net": 4102785,
+    "vat": 820557
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 3351,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 4055,
+    "net": 3351,
+    "vat": 704
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 74708421,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 74708421,
+    "net": 62780186,
+    "vat": 11928235
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 45106516,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 54127819,
+    "net": 45106516,
+    "vat": 9021303
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 2114,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 9944,
+    "net": 7830,
+    "vat": 2114
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 3055,
+   "rateBp": 900,
+   "expected": {
+    "gross": 36999,
+    "net": 33944,
+    "vat": 3055
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 75383449,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 452300694,
+    "net": 376917245,
+    "vat": 75383449
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 49016370,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 58329480,
+    "net": 49016370,
+    "vat": 9313110
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 305750,
+   "rateBp": 500,
+   "expected": {
+    "gross": 305750,
+    "net": 291190,
+    "vat": 14560
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 2630508,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 3288135,
+    "net": 2630508,
+    "vat": 657627
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 78873504,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 795905359,
+    "net": 717031855,
+    "vat": 78873504
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 1287319,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 1287319,
+    "net": 1013637,
+    "vat": 273682
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 75506,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 75506,
+    "net": 68642,
+    "vat": 6864
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 4182,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 4182,
+    "net": 3428,
+    "vat": 754
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 473403,
+   "rateBp": 900,
+   "expected": {
+    "gross": 516009,
+    "net": 473403,
+    "vat": 42606
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 4304,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 43431,
+    "net": 39127,
+    "vat": 4304
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 900,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 1062,
+    "net": 900,
+    "vat": 162
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 46297796,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 56483311,
+    "net": 46297796,
+    "vat": 10185515
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 461740,
+   "rateBp": 900,
+   "expected": {
+    "gross": 461740,
+    "net": 423615,
+    "vat": 38125
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 744,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 4126,
+    "net": 3382,
+    "vat": 744
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 42968587,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 42968587,
+    "net": 34374870,
+    "vat": 8593717
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 500165,
+   "rateBp": 0,
+   "expected": {
+    "gross": 500165,
+    "net": 500165,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 4150,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 27206,
+    "net": 23056,
+    "vat": 4150
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 896061,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 896061,
+    "net": 728505,
+    "vat": 167556
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 3987,
+   "rateBp": 800,
+   "expected": {
+    "gross": 3987,
+    "net": 3692,
+    "vat": 295
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 592,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 592,
+    "net": 502,
+    "vat": 90
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 360543,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 2163258,
+    "net": 1802715,
+    "vat": 360543
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 218339,
+   "rateBp": 900,
+   "expected": {
+    "gross": 218339,
+    "net": 200311,
+    "vat": 18028
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 3966,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 4958,
+    "net": 3966,
+    "vat": 992
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 28491464,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 134015405,
+    "net": 105523941,
+    "vat": 28491464
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 580999,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 580999,
+    "net": 476229,
+    "vat": 104770
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 38801550,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 46173845,
+    "net": 38801550,
+    "vat": 7372295
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 3102,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 3102,
+    "net": 2522,
+    "vat": 580
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 463389,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 579236,
+    "net": 463389,
+    "vat": 115847
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 48686549,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 48686549,
+    "net": 40572124,
+    "vat": 8114425
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 26289752,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 26289752,
+    "net": 21908127,
+    "vat": 4381625
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 121334,
+   "rateBp": 800,
+   "expected": {
+    "gross": 131041,
+    "net": 121334,
+    "vat": 9707
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 596287,
+   "rateBp": 500,
+   "expected": {
+    "gross": 12522027,
+    "net": 11925740,
+    "vat": 596287
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 20774,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 115201,
+    "net": 94427,
+    "vat": 20774
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 425830,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 425830,
+    "net": 360873,
+    "vat": 64957
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 1498,
+   "rateBp": 0,
+   "expected": {
+    "gross": 1498,
+    "net": 1498,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 54186066,
+   "rateBp": 800,
+   "expected": {
+    "gross": 58520951,
+    "net": 54186066,
+    "vat": 4334885
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 239711,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 1571439,
+    "net": 1331728,
+    "vat": 239711
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 76395518,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 458373108,
+    "net": 381977590,
+    "vat": 76395518
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 376871,
+   "rateBp": 900,
+   "expected": {
+    "gross": 4564327,
+    "net": 4187456,
+    "vat": 376871
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 694518,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 770915,
+    "net": 694518,
+    "vat": 76397
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 743623,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 743623,
+    "net": 604572,
+    "vat": 139051
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 548103,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 3593120,
+    "net": 3045017,
+    "vat": 548103
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 237436,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 237436,
+    "net": 213906,
+    "vat": 23530
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 17324790,
+   "rateBp": 0,
+   "expected": {
+    "gross": 17324790,
+    "net": 17324790,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 570833,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 685000,
+    "net": 570833,
+    "vat": 114167
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 1258,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 1547,
+    "net": 1258,
+    "vat": 289
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 1805,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 1805,
+    "net": 1421,
+    "vat": 384
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 22147133,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 22147133,
+    "net": 18611036,
+    "vat": 3536097
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 79375674,
+   "rateBp": 500,
+   "expected": {
+    "gross": 79375674,
+    "net": 75595880,
+    "vat": 3779794
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 9548,
+   "rateBp": 0,
+   "expected": {
+    "gross": 9548,
+    "net": 9548,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 3688,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 22128,
+    "net": 18440,
+    "vat": 3688
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 37757775,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 37757775,
+    "net": 31998114,
+    "vat": 5759661
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 409405,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 409405,
+    "net": 344038,
+    "vat": 65367
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 68512661,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 68512661,
+    "net": 54810129,
+    "vat": 13702532
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 3113,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 3767,
+    "net": 3113,
+    "vat": 654
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 77798751,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 77798751,
+    "net": 63251017,
+    "vat": 14547734
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 2872,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 17988,
+    "net": 15116,
+    "vat": 2872
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 916,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 4580,
+    "net": 3664,
+    "vat": 916
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 342138,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 342138,
+    "net": 308232,
+    "vat": 33906
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 84244838,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 527638722,
+    "net": 443393884,
+    "vat": 84244838
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 176606,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 220758,
+    "net": 176606,
+    "vat": 44152
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 413365,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 2381770,
+    "net": 1968405,
+    "vat": 413365
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 458735,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 458735,
+    "net": 382279,
+    "vat": 76456
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 2619,
+   "rateBp": 900,
+   "expected": {
+    "gross": 2619,
+    "net": 2403,
+    "vat": 216
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 633263,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 2978682,
+    "net": 2345419,
+    "vat": 633263
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 961,
+   "rateBp": 900,
+   "expected": {
+    "gross": 1047,
+    "net": 961,
+    "vat": 86
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 4087,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 4087,
+    "net": 3715,
+    "vat": 372
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 447361,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 2932700,
+    "net": 2485339,
+    "vat": 447361
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 36070075,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 44005492,
+    "net": 36070075,
+    "vat": 7935417
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 58202669,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 291013345,
+    "net": 232810676,
+    "vat": 58202669
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 495253,
+   "rateBp": 0,
+   "expected": {
+    "gross": 495253,
+    "net": 495253,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 721956,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 721956,
+    "net": 611827,
+    "vat": 110129
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 29649296,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 35579155,
+    "net": 29649296,
+    "vat": 5929859
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 37649535,
+   "rateBp": 0,
+   "expected": {
+    "gross": 37649535,
+    "net": 37649535,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 26149167,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 26149167,
+    "net": 21610882,
+    "vat": 4538285
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 74,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 410,
+    "net": 336,
+    "vat": 74
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 2198,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 2704,
+    "net": 2198,
+    "vat": 506
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 549942,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 549942,
+    "net": 462136,
+    "vat": 87806
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 948084,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 5257557,
+    "net": 4309473,
+    "vat": 948084
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 99118905,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 571113691,
+    "net": 471994786,
+    "vat": 99118905
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 4288,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 20169,
+    "net": 15881,
+    "vat": 4288
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 2275,
+   "rateBp": 800,
+   "expected": {
+    "gross": 2457,
+    "net": 2275,
+    "vat": 182
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 287842,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 1886964,
+    "net": 1599122,
+    "vat": 287842
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 461,
+   "rateBp": 800,
+   "expected": {
+    "gross": 461,
+    "net": 427,
+    "vat": 34
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 20821968,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 20821968,
+    "net": 17067187,
+    "vat": 3754781
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 21542748,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 124127262,
+    "net": 102584514,
+    "vat": 21542748
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 71816,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 337801,
+    "net": 265985,
+    "vat": 71816
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 161,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 179,
+    "net": 161,
+    "vat": 18
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 677866,
+   "rateBp": 900,
+   "expected": {
+    "gross": 738874,
+    "net": 677866,
+    "vat": 61008
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 25504010,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 30604812,
+    "net": 25504010,
+    "vat": 5100802
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 4770,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 4770,
+    "net": 3942,
+    "vat": 828
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 1578,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 1578,
+    "net": 1293,
+    "vat": 285
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 360910,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 2365966,
+    "net": 2005056,
+    "vat": 360910
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 555705,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 555705,
+    "net": 459260,
+    "vat": 96445
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 1788,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 9915,
+    "net": 8127,
+    "vat": 1788
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 3156,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 3472,
+    "net": 3156,
+    "vat": 316
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 101268,
+   "rateBp": 500,
+   "expected": {
+    "gross": 101268,
+    "net": 96446,
+    "vat": 4822
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 252625,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 2778875,
+    "net": 2526250,
+    "vat": 252625
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 71460332,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 87181605,
+    "net": 71460332,
+    "vat": 15721273
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 870457,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 870457,
+    "net": 685399,
+    "vat": 185058
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 40404390,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 47677180,
+    "net": 40404390,
+    "vat": 7272790
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 52413390,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 52413390,
+    "net": 47219270,
+    "vat": 5194120
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 69047054,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 83546935,
+    "net": 69047054,
+    "vat": 14499881
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 97116224,
+   "rateBp": 500,
+   "expected": {
+    "gross": 97116224,
+    "net": 92491642,
+    "vat": 4624582
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 14308726,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 14308726,
+    "net": 12024139,
+    "vat": 2284587
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 45618,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 252973,
+    "net": 207355,
+    "vat": 45618
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 45552412,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 227762060,
+    "net": 182209648,
+    "vat": 45552412
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 256216,
+   "rateBp": 800,
+   "expected": {
+    "gross": 276713,
+    "net": 256216,
+    "vat": 20497
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 635508,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 635508,
+    "net": 572530,
+    "vat": 62978
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 1679,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 1679,
+    "net": 1376,
+    "vat": 303
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 93084743,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 939309679,
+    "net": 846224936,
+    "vat": 93084743
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 147926,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 181949,
+    "net": 147926,
+    "vat": 34023
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 1730,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 10380,
+    "net": 8650,
+    "vat": 1730
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 544019,
+   "rateBp": 900,
+   "expected": {
+    "gross": 544019,
+    "net": 499100,
+    "vat": 44919
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 657789,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 723568,
+    "net": 657789,
+    "vat": 65779
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 3151,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 3151,
+    "net": 2865,
+    "vat": 286
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 15706072,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 17276679,
+    "net": 15706072,
+    "vat": 1570607
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 76304971,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 358915975,
+    "net": 282611004,
+    "vat": 76304971
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 97284092,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 1070125012,
+    "net": 972840920,
+    "vat": 97284092
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 520899,
+   "rateBp": 500,
+   "expected": {
+    "gross": 546944,
+    "net": 520899,
+    "vat": 26045
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 1424,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 1780,
+    "net": 1424,
+    "vat": 356
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 2457420,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 2973478,
+    "net": 2457420,
+    "vat": 516058
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 860249,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 954876,
+    "net": 860249,
+    "vat": 94627
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 442537,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 442537,
+    "net": 398682,
+    "vat": 43855
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 1103,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 1335,
+    "net": 1103,
+    "vat": 232
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 4094,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 4503,
+    "net": 4094,
+    "vat": 409
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 329830,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 3628130,
+    "net": 3298300,
+    "vat": 329830
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 64955682,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 64955682,
+    "net": 52809498,
+    "vat": 12146184
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 1255,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 6275,
+    "net": 5020,
+    "vat": 1255
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 3570,
+   "rateBp": 0,
+   "expected": {
+    "gross": 3570,
+    "net": 3570,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 260010,
+   "rateBp": 500,
+   "expected": {
+    "gross": 273011,
+    "net": 260010,
+    "vat": 13001
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 13455853,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 13455853,
+    "net": 12122390,
+    "vat": 1333463
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 164074,
+   "rateBp": 900,
+   "expected": {
+    "gross": 178841,
+    "net": 164074,
+    "vat": 14767
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 24834078,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 29800894,
+    "net": 24834078,
+    "vat": 4966816
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 2381,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 2381,
+    "net": 2165,
+    "vat": 216
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 81861869,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 90866675,
+    "net": 81861869,
+    "vat": 9004806
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 648,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 765,
+    "net": 648,
+    "vat": 117
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 75201,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 433301,
+    "net": 358100,
+    "vat": 75201
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 171849,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 171849,
+    "net": 154819,
+    "vat": 17030
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 524420,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 524420,
+    "net": 433405,
+    "vat": 91015
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 135243,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 847048,
+    "net": 711805,
+    "vat": 135243
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 79623677,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 97140886,
+    "net": 79623677,
+    "vat": 17517209
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 444308,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 2782771,
+    "net": 2338463,
+    "vat": 444308
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 393911,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 476632,
+    "net": 393911,
+    "vat": 82721
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 636,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 3665,
+    "net": 3029,
+    "vat": 636
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 67189520,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 67189520,
+    "net": 55528529,
+    "vat": 11660991
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 64386005,
+   "rateBp": 0,
+   "expected": {
+    "gross": 64386005,
+    "net": 64386005,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 7747977,
+   "rateBp": 800,
+   "expected": {
+    "gross": 7747977,
+    "net": 7174053,
+    "vat": 573924
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 4954,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 6044,
+    "net": 4954,
+    "vat": 1090
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 55720205,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 348984442,
+    "net": 293264237,
+    "vat": 55720205
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 2620,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 2620,
+    "net": 2096,
+    "vat": 524
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 516456,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 516456,
+    "net": 406658,
+    "vat": 109798
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 13783191,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 16677661,
+    "net": 13783191,
+    "vat": 2894470
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 62507796,
+   "rateBp": 900,
+   "expected": {
+    "gross": 62507796,
+    "net": 57346602,
+    "vat": 5161194
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 4808,
+   "rateBp": 800,
+   "expected": {
+    "gross": 64908,
+    "net": 60100,
+    "vat": 4808
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 58190765,
+   "rateBp": 900,
+   "expected": {
+    "gross": 63427934,
+    "net": 58190765,
+    "vat": 5237169
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 1747,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 1747,
+    "net": 1456,
+    "vat": 291
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 326429,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 1632145,
+    "net": 1305716,
+    "vat": 326429
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 3518,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 20270,
+    "net": 16752,
+    "vat": 3518
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 64104974,
+   "rateBp": 500,
+   "expected": {
+    "gross": 64104974,
+    "net": 61052356,
+    "vat": 3052618
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 40120,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 40120,
+    "net": 33714,
+    "vat": 6406
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 18999096,
+   "rateBp": 0,
+   "expected": {
+    "gross": 18999096,
+    "net": 18999096,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 855,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 4275,
+    "net": 3420,
+    "vat": 855
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 454057,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 454057,
+    "net": 375254,
+    "vat": 78803
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 23286485,
+   "rateBp": 800,
+   "expected": {
+    "gross": 25149404,
+    "net": 23286485,
+    "vat": 1862919
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 3186,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 3536,
+    "net": 3186,
+    "vat": 350
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 72853661,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 91067076,
+    "net": 72853661,
+    "vat": 18213415
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 297,
+   "rateBp": 800,
+   "expected": {
+    "gross": 4010,
+    "net": 3713,
+    "vat": 297
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 4870,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 5406,
+    "net": 4870,
+    "vat": 536
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 693364,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 3845019,
+    "net": 3151655,
+    "vat": 693364
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 68200576,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 320795302,
+    "net": 252594726,
+    "vat": 68200576
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 850,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 850,
+    "net": 766,
+    "vat": 84
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 219,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 261,
+    "net": 219,
+    "vat": 42
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 65982909,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 79839320,
+    "net": 65982909,
+    "vat": 13856411
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 555501,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 3080506,
+    "net": 2525005,
+    "vat": 555501
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 4413,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 26478,
+    "net": 22065,
+    "vat": 4413
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 64606552,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 71713273,
+    "net": 64606552,
+    "vat": 7106721
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 71313973,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 71313973,
+    "net": 58937168,
+    "vat": 12376805
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 4013,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 25134,
+    "net": 21121,
+    "vat": 4013
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 127557,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 1403127,
+    "net": 1275570,
+    "vat": 127557
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 847062,
+   "rateBp": 900,
+   "expected": {
+    "gross": 847062,
+    "net": 777121,
+    "vat": 69941
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 56788603,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 56788603,
+    "net": 51160904,
+    "vat": 5627699
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 629892,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 3149460,
+    "net": 2519568,
+    "vat": 629892
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 43907462,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 263444772,
+    "net": 219537310,
+    "vat": 43907462
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 43684827,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 205480483,
+    "net": 161795656,
+    "vat": 43684827
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 2009,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 2009,
+    "net": 1826,
+    "vat": 183
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 376452,
+   "rateBp": 900,
+   "expected": {
+    "gross": 376452,
+    "net": 345369,
+    "vat": 31083
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 3065,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 30929,
+    "net": 27864,
+    "vat": 3065
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 93923491,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 93923491,
+    "net": 78927303,
+    "vat": 14996188
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 2065,
+   "rateBp": 500,
+   "expected": {
+    "gross": 2065,
+    "net": 1967,
+    "vat": 98
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 1414,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 1414,
+    "net": 1169,
+    "vat": 245
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 16964771,
+   "rateBp": 900,
+   "expected": {
+    "gross": 18491600,
+    "net": 16964771,
+    "vat": 1526829
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 38640810,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 47528196,
+    "net": 38640810,
+    "vat": 8887386
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 79592420,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 397962100,
+    "net": 318369680,
+    "vat": 79592420
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 3077,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 33847,
+    "net": 30770,
+    "vat": 3077
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 22964272,
+   "rateBp": 900,
+   "expected": {
+    "gross": 22964272,
+    "net": 21068139,
+    "vat": 1896133
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 4238,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 5128,
+    "net": 4238,
+    "vat": 890
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 4591,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 5831,
+    "net": 4591,
+    "vat": 1240
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 49946757,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 504008184,
+    "net": 454061427,
+    "vat": 49946757
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 783381,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 994894,
+    "net": 783381,
+    "vat": 211513
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 843824,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 1004151,
+    "net": 843824,
+    "vat": 160327
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 89531859,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 89531859,
+    "net": 74609883,
+    "vat": 14921976
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 2082,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 2082,
+    "net": 1666,
+    "vat": 416
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 1707,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 2065,
+    "net": 1707,
+    "vat": 358
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 2763,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 2763,
+    "net": 2246,
+    "vat": 517
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 531056,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 637267,
+    "net": 531056,
+    "vat": 106211
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 814820,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 814820,
+    "net": 651856,
+    "vat": 162964
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 40628251,
+   "rateBp": 800,
+   "expected": {
+    "gross": 548481389,
+    "net": 507853138,
+    "vat": 40628251
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 634295,
+   "rateBp": 900,
+   "expected": {
+    "gross": 691382,
+    "net": 634295,
+    "vat": 57087
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 2068131,
+   "rateBp": 800,
+   "expected": {
+    "gross": 2233581,
+    "net": 2068131,
+    "vat": 165450
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 4744,
+   "rateBp": 800,
+   "expected": {
+    "gross": 5124,
+    "net": 4744,
+    "vat": 380
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 4197,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 46167,
+    "net": 41970,
+    "vat": 4197
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 3891,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 3891,
+    "net": 3189,
+    "vat": 702
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 97097606,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 115546151,
+    "net": 97097606,
+    "vat": 18448545
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 383507,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 456373,
+    "net": 383507,
+    "vat": 72866
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 71260144,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 71260144,
+    "net": 57935076,
+    "vat": 13325068
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 963878,
+   "rateBp": 500,
+   "expected": {
+    "gross": 20241438,
+    "net": 19277560,
+    "vat": 963878
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 4453,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 26718,
+    "net": 22265,
+    "vat": 4453
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 47519263,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 47519263,
+    "net": 39272118,
+    "vat": 8247145
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 559005,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 676396,
+    "net": 559005,
+    "vat": 117391
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 33206834,
+   "rateBp": 0,
+   "expected": {
+    "gross": 33206834,
+    "net": 33206834,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 217589,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 239348,
+    "net": 217589,
+    "vat": 21759
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 174167,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 217709,
+    "net": 174167,
+    "vat": 43542
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 79402362,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 96076858,
+    "net": 79402362,
+    "vat": 16674496
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 4804,
+   "rateBp": 800,
+   "expected": {
+    "gross": 64854,
+    "net": 60050,
+    "vat": 4804
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 1302,
+   "rateBp": 500,
+   "expected": {
+    "gross": 27342,
+    "net": 26040,
+    "vat": 1302
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 1311,
+   "rateBp": 800,
+   "expected": {
+    "gross": 1416,
+    "net": 1311,
+    "vat": 105
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 30842574,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 30842574,
+    "net": 24285491,
+    "vat": 6557083
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 3942,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 5006,
+    "net": 3942,
+    "vat": 1064
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 4716,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 51876,
+    "net": 47160,
+    "vat": 4716
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 1227,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 1227,
+    "net": 1105,
+    "vat": 122
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 127672,
+   "rateBp": 800,
+   "expected": {
+    "gross": 1723572,
+    "net": 1595900,
+    "vat": 127672
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 79392727,
+   "rateBp": 800,
+   "expected": {
+    "gross": 1071801815,
+    "net": 992409088,
+    "vat": 79392727
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 23323250,
+   "rateBp": 500,
+   "expected": {
+    "gross": 23323250,
+    "net": 22212619,
+    "vat": 1110631
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 145091,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 870546,
+    "net": 725455,
+    "vat": 145091
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 1361,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 1361,
+    "net": 1144,
+    "vat": 217
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 62444152,
+   "rateBp": 800,
+   "expected": {
+    "gross": 62444152,
+    "net": 57818659,
+    "vat": 4625493
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 539162,
+   "rateBp": 800,
+   "expected": {
+    "gross": 539162,
+    "net": 499224,
+    "vat": 39938
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 121071,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 145285,
+    "net": 121071,
+    "vat": 24214
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 183557,
+   "rateBp": 900,
+   "expected": {
+    "gross": 2223079,
+    "net": 2039522,
+    "vat": 183557
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 720592,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 4723881,
+    "net": 4003289,
+    "vat": 720592
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 433999,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 477399,
+    "net": 433999,
+    "vat": 43400
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 70256127,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 421536762,
+    "net": 351280635,
+    "vat": 70256127
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 749304,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 749304,
+    "net": 619260,
+    "vat": 130044
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 930979,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 5162702,
+    "net": 4231723,
+    "vat": 930979
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 1005,
+   "rateBp": 800,
+   "expected": {
+    "gross": 1005,
+    "net": 931,
+    "vat": 74
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 405490,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 482533,
+    "net": 405490,
+    "vat": 77043
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 4897,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 49415,
+    "net": 44518,
+    "vat": 4897
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 50106534,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 50106534,
+    "net": 45141022,
+    "vat": 4965512
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 71691349,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 71691349,
+    "net": 60755381,
+    "vat": 10935968
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 867343,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 954077,
+    "net": 867343,
+    "vat": 86734
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 556,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 3336,
+    "net": 2780,
+    "vat": 556
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 802783,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 802783,
+    "net": 652669,
+    "vat": 150114
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 1703,
+   "rateBp": 900,
+   "expected": {
+    "gross": 1856,
+    "net": 1703,
+    "vat": 153
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 670,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 670,
+    "net": 545,
+    "vat": 125
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 460043,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 5060473,
+    "net": 4600430,
+    "vat": 460043
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 86042037,
+   "rateBp": 800,
+   "expected": {
+    "gross": 1161567500,
+    "net": 1075525463,
+    "vat": 86042037
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 900819,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 999909,
+    "net": 900819,
+    "vat": 99090
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 801249,
+   "rateBp": 800,
+   "expected": {
+    "gross": 10816862,
+    "net": 10015613,
+    "vat": 801249
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 63143479,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 297008216,
+    "net": 233864737,
+    "vat": 63143479
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 195174,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 195174,
+    "net": 159979,
+    "vat": 35195
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 61372933,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 340340810,
+    "net": 278967877,
+    "vat": 61372933
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 619279,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 6812069,
+    "net": 6192790,
+    "vat": 619279
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 870765,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 957842,
+    "net": 870765,
+    "vat": 87077
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 3076,
+   "rateBp": 0,
+   "expected": {
+    "gross": 3076,
+    "net": 3076,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 4961030,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 4961030,
+    "net": 3906323,
+    "vat": 1054707
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 93676080,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 114284818,
+    "net": 93676080,
+    "vat": 20608738
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 228675,
+   "rateBp": 500,
+   "expected": {
+    "gross": 228675,
+    "net": 217786,
+    "vat": 10889
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 96167195,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 96167195,
+    "net": 78825570,
+    "vat": 17341625
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 94396076,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 504813798,
+    "net": 410417722,
+    "vat": 94396076
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 47346086,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 272803638,
+    "net": 225457552,
+    "vat": 47346086
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 609,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 2865,
+    "net": 2256,
+    "vat": 609
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 318196,
+   "rateBp": 500,
+   "expected": {
+    "gross": 6682116,
+    "net": 6363920,
+    "vat": 318196
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 947799,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 4458166,
+    "net": 3510367,
+    "vat": 947799
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 160245,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 1050495,
+    "net": 890250,
+    "vat": 160245
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 11125249,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 122377739,
+    "net": 111252490,
+    "vat": 11125249
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 492052,
+   "rateBp": 0,
+   "expected": {
+    "gross": 492052,
+    "net": 492052,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 470607,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 2947486,
+    "net": 2476879,
+    "vat": 470607
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 35282036,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 42338443,
+    "net": 35282036,
+    "vat": 7056407
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 65352849,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 65352849,
+    "net": 53132398,
+    "vat": 12220451
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 939970,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 10339670,
+    "net": 9399700,
+    "vat": 939970
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 86746381,
+   "rateBp": 500,
+   "expected": {
+    "gross": 86746381,
+    "net": 82615601,
+    "vat": 4130780
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 3609,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 4295,
+    "net": 3609,
+    "vat": 686
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 559813,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 559813,
+    "net": 458863,
+    "vat": 100950
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 24508118,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 153498213,
+    "net": 128990095,
+    "vat": 24508118
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 18790619,
+   "rateBp": 500,
+   "expected": {
+    "gross": 18790619,
+    "net": 17895828,
+    "vat": 894791
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 1771,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 19481,
+    "net": 17710,
+    "vat": 1771
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 625731,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 3754386,
+    "net": 3128655,
+    "vat": 625731
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 562539,
+   "rateBp": 0,
+   "expected": {
+    "gross": 562539,
+    "net": 562539,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 938462,
+   "rateBp": 900,
+   "expected": {
+    "gross": 938462,
+    "net": 860974,
+    "vat": 77488
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 15580932,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 15580932,
+    "net": 12984110,
+    "vat": 2596822
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 72635,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 363175,
+    "net": 290540,
+    "vat": 72635
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 346297,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 384390,
+    "net": 346297,
+    "vat": 38093
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 3917,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 3917,
+    "net": 3084,
+    "vat": 833
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 1103,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 1401,
+    "net": 1103,
+    "vat": 298
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 3194,
+   "rateBp": 500,
+   "expected": {
+    "gross": 3354,
+    "net": 3194,
+    "vat": 160
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 882834,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 882834,
+    "net": 723634,
+    "vat": 159200
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 93539746,
+   "rateBp": 500,
+   "expected": {
+    "gross": 1964334666,
+    "net": 1870794920,
+    "vat": 93539746
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 46828878,
+   "rateBp": 900,
+   "expected": {
+    "gross": 51043477,
+    "net": 46828878,
+    "vat": 4214599
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 145686,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 145686,
+    "net": 123463,
+    "vat": 22223
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 747945,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 3518112,
+    "net": 2770167,
+    "vat": 747945
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 23401785,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 25741964,
+    "net": 23401785,
+    "vat": 2340179
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 38102751,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 38102751,
+    "net": 30977846,
+    "vat": 7124905
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 54332,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 67915,
+    "net": 54332,
+    "vat": 13583
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 7668901,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 9739504,
+    "net": 7668901,
+    "vat": 2070603
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 256356,
+   "rateBp": 500,
+   "expected": {
+    "gross": 269174,
+    "net": 256356,
+    "vat": 12818
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 1810,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 2208,
+    "net": 1810,
+    "vat": 398
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 5079313,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 51254886,
+    "net": 46175573,
+    "vat": 5079313
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 550168,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 5551695,
+    "net": 5001527,
+    "vat": 550168
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 50756060,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 271434582,
+    "net": 220678522,
+    "vat": 50756060
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 254492,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 254492,
+    "net": 231356,
+    "vat": 23136
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 3746,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 24557,
+    "net": 20811,
+    "vat": 3746
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 954965,
+   "rateBp": 500,
+   "expected": {
+    "gross": 1002713,
+    "net": 954965,
+    "vat": 47748
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 309,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 3118,
+    "net": 2809,
+    "vat": 309
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 1976,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 10567,
+    "net": 8591,
+    "vat": 1976
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 203,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 1271,
+    "net": 1068,
+    "vat": 203
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 74820,
+   "rateBp": 500,
+   "expected": {
+    "gross": 74820,
+    "net": 71257,
+    "vat": 3563
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 69073655,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 69073655,
+    "net": 57085665,
+    "vat": 11987990
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 1815,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 19965,
+    "net": 18150,
+    "vat": 1815
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 19701549,
+   "rateBp": 900,
+   "expected": {
+    "gross": 238607649,
+    "net": 218906100,
+    "vat": 19701549
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 1290,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 1290,
+    "net": 1049,
+    "vat": 241
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 1290,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 7433,
+    "net": 6143,
+    "vat": 1290
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 13960710,
+   "rateBp": 0,
+   "expected": {
+    "gross": 13960710,
+    "net": 13960710,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 70141942,
+   "rateBp": 900,
+   "expected": {
+    "gross": 70141942,
+    "net": 64350406,
+    "vat": 5791536
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 11,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 61,
+    "net": 50,
+    "vat": 11
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 59981354,
+   "rateBp": 500,
+   "expected": {
+    "gross": 1259608434,
+    "net": 1199627080,
+    "vat": 59981354
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 267418,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 267418,
+    "net": 240917,
+    "vat": 26501
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 2110,
+   "rateBp": 0,
+   "expected": {
+    "gross": 2110,
+    "net": 2110,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 584911,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 3370201,
+    "net": 2785290,
+    "vat": 584911
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 4030,
+   "rateBp": 900,
+   "expected": {
+    "gross": 4030,
+    "net": 3697,
+    "vat": 333
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 2038,
+   "rateBp": 800,
+   "expected": {
+    "gross": 2201,
+    "net": 2038,
+    "vat": 163
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 91662300,
+   "rateBp": 900,
+   "expected": {
+    "gross": 99911907,
+    "net": 91662300,
+    "vat": 8249607
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 502151,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 502151,
+    "net": 421976,
+    "vat": 80175
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 153531,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 153531,
+    "net": 130111,
+    "vat": 23420
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 3109,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 17914,
+    "net": 14805,
+    "vat": 3109
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 14075946,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 17031895,
+    "net": 14075946,
+    "vat": 2955949
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 270254,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 1771665,
+    "net": 1501411,
+    "vat": 270254
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 79053382,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 79053382,
+    "net": 65877818,
+    "vat": 13175564
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 3747,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 4159,
+    "net": 3747,
+    "vat": 412
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 3490,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 4293,
+    "net": 3490,
+    "vat": 803
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 889093,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 1049130,
+    "net": 889093,
+    "vat": 160037
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 690233,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 690233,
+    "net": 580028,
+    "vat": 110205
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 88568991,
+   "rateBp": 800,
+   "expected": {
+    "gross": 1195681379,
+    "net": 1107112388,
+    "vat": 88568991
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 4490,
+   "rateBp": 500,
+   "expected": {
+    "gross": 4715,
+    "net": 4490,
+    "vat": 225
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 675301,
+   "rateBp": 0,
+   "expected": {
+    "gross": 675301,
+    "net": 675301,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 4872,
+   "rateBp": 900,
+   "expected": {
+    "gross": 5310,
+    "net": 4872,
+    "vat": 438
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 766834,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 766834,
+    "net": 633747,
+    "vat": 133087
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 456761,
+   "rateBp": 900,
+   "expected": {
+    "gross": 497869,
+    "net": 456761,
+    "vat": 41108
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 3227,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 3227,
+    "net": 2582,
+    "vat": 645
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 803476,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 803476,
+    "net": 669563,
+    "vat": 133913
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 34809685,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 34809685,
+    "net": 27409201,
+    "vat": 7400484
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 2339,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 2924,
+    "net": 2339,
+    "vat": 585
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 63850510,
+   "rateBp": 900,
+   "expected": {
+    "gross": 69597056,
+    "net": 63850510,
+    "vat": 5746546
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 9262826,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 43569589,
+    "net": 34306763,
+    "vat": 9262826
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 902157,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 902157,
+    "net": 751798,
+    "vat": 150359
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 3623,
+   "rateBp": 800,
+   "expected": {
+    "gross": 3623,
+    "net": 3355,
+    "vat": 268
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 4670,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 47125,
+    "net": 42455,
+    "vat": 4670
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 518,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 3244,
+    "net": 2726,
+    "vat": 518
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 430371,
+   "rateBp": 0,
+   "expected": {
+    "gross": 430371,
+    "net": 430371,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 116,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 580,
+    "net": 464,
+    "vat": 116
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 2602,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 2602,
+    "net": 2205,
+    "vat": 397
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 37616,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 37616,
+    "net": 31088,
+    "vat": 6528
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 38239908,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 229439448,
+    "net": 191199540,
+    "vat": 38239908
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 95057388,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 95057388,
+    "net": 79214490,
+    "vat": 15842898
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 7085112,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 8502134,
+    "net": 7085112,
+    "vat": 1417022
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 288487,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 288487,
+    "net": 242426,
+    "vat": 46061
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 512104,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 568435,
+    "net": 512104,
+    "vat": 56331
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 1318,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 7594,
+    "net": 6276,
+    "vat": 1318
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 617887,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 617887,
+    "net": 486525,
+    "vat": 131362
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 137677,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 736273,
+    "net": 598596,
+    "vat": 137677
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 79917326,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 95900791,
+    "net": 79917326,
+    "vat": 15983465
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 1152,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 1152,
+    "net": 944,
+    "vat": 208
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 3776,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 4493,
+    "net": 3776,
+    "vat": 717
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 4438,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 4438,
+    "net": 3638,
+    "vat": 800
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 99452961,
+   "rateBp": 500,
+   "expected": {
+    "gross": 2088512181,
+    "net": 1989059220,
+    "vat": 99452961
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 281394,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 334859,
+    "net": 281394,
+    "vat": 53465
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 39843709,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 402059245,
+    "net": 362215536,
+    "vat": 39843709
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 905050,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 1086060,
+    "net": 905050,
+    "vat": 181010
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 258182,
+   "rateBp": 500,
+   "expected": {
+    "gross": 258182,
+    "net": 245888,
+    "vat": 12294
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 3731,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 37649,
+    "net": 33918,
+    "vat": 3731
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 81476885,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 81476885,
+    "net": 74069895,
+    "vat": 7406990
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 3817,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 41987,
+    "net": 38170,
+    "vat": 3817
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 6297694,
+   "rateBp": 800,
+   "expected": {
+    "gross": 6297694,
+    "net": 5831198,
+    "vat": 466496
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 355882,
+   "rateBp": 900,
+   "expected": {
+    "gross": 355882,
+    "net": 326497,
+    "vat": 29385
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 4480,
+   "rateBp": 900,
+   "expected": {
+    "gross": 54258,
+    "net": 49778,
+    "vat": 4480
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 965679,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 965679,
+    "net": 772543,
+    "vat": 193136
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 249164,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 1435659,
+    "net": 1186495,
+    "vat": 249164
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 2183,
+   "rateBp": 900,
+   "expected": {
+    "gross": 26439,
+    "net": 24256,
+    "vat": 2183
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 42,
+   "rateBp": 800,
+   "expected": {
+    "gross": 42,
+    "net": 39,
+    "vat": 3
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 2725,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 17067,
+    "net": 14342,
+    "vat": 2725
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 887569,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 5558985,
+    "net": 4671416,
+    "vat": 887569
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 3774,
+   "rateBp": 900,
+   "expected": {
+    "gross": 3774,
+    "net": 3462,
+    "vat": 312
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 4116,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 5227,
+    "net": 4116,
+    "vat": 1111
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 4060,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 4060,
+    "net": 3355,
+    "vat": 705
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 821831,
+   "rateBp": 500,
+   "expected": {
+    "gross": 862923,
+    "net": 821831,
+    "vat": 41092
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 95195143,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 624057049,
+    "net": 528861906,
+    "vat": 95195143
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 543035,
+   "rateBp": 0,
+   "expected": {
+    "gross": 543035,
+    "net": 543035,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 320796,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 391371,
+    "net": 320796,
+    "vat": 70575
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 659309,
+   "rateBp": 800,
+   "expected": {
+    "gross": 712054,
+    "net": 659309,
+    "vat": 52745
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 51579235,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 520481371,
+    "net": 468902136,
+    "vat": 51579235
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 2664,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 3197,
+    "net": 2664,
+    "vat": 533
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 3956,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 3956,
+    "net": 3297,
+    "vat": 659
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 1673,
+   "rateBp": 500,
+   "expected": {
+    "gross": 1673,
+    "net": 1593,
+    "vat": 80
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 2284,
+   "rateBp": 800,
+   "expected": {
+    "gross": 2467,
+    "net": 2284,
+    "vat": 183
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 44874844,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 44874844,
+    "net": 35334523,
+    "vat": 9540321
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 277922,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 1307263,
+    "net": 1029341,
+    "vat": 277922
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 15223386,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 99797753,
+    "net": 84574367,
+    "vat": 15223386
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 21,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 25,
+    "net": 21,
+    "vat": 4
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 61582822,
+   "rateBp": 0,
+   "expected": {
+    "gross": 61582822,
+    "net": 61582822,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 2781,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 18231,
+    "net": 15450,
+    "vat": 2781
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 27559170,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 129630170,
+    "net": 102071000,
+    "vat": 27559170
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 223562,
+   "rateBp": 500,
+   "expected": {
+    "gross": 223562,
+    "net": 212916,
+    "vat": 10646
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 385183,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 385183,
+    "net": 347012,
+    "vat": 38171
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 841970,
+   "rateBp": 900,
+   "expected": {
+    "gross": 917747,
+    "net": 841970,
+    "vat": 75777
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 31417589,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 38015283,
+    "net": 31417589,
+    "vat": 6597694
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 588,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 588,
+    "net": 490,
+    "vat": 98
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 106584,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 639504,
+    "net": 532920,
+    "vat": 106584
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 882749,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 4895244,
+    "net": 4012495,
+    "vat": 882749
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 4169,
+   "rateBp": 900,
+   "expected": {
+    "gross": 4169,
+    "net": 3825,
+    "vat": 344
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 795529,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 954635,
+    "net": 795529,
+    "vat": 159106
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 1902,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 1902,
+    "net": 1585,
+    "vat": 317
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 899940,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 5399640,
+    "net": 4499700,
+    "vat": 899940
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 756964,
+   "rateBp": 800,
+   "expected": {
+    "gross": 10219014,
+    "net": 9462050,
+    "vat": 756964
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 98551880,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 98551880,
+    "net": 83518542,
+    "vat": 15033338
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 1861739,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 2215469,
+    "net": 1861739,
+    "vat": 353730
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 2454,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 24763,
+    "net": 22309,
+    "vat": 2454
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 149738,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 1510993,
+    "net": 1361255,
+    "vat": 149738
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 88910121,
+   "rateBp": 800,
+   "expected": {
+    "gross": 1200286634,
+    "net": 1111376513,
+    "vat": 88910121
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 54493616,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 54493616,
+    "net": 49093348,
+    "vat": 5400268
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 487116,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 487116,
+    "net": 412810,
+    "vat": 74306
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 4705,
+   "rateBp": 800,
+   "expected": {
+    "gross": 4705,
+    "net": 4356,
+    "vat": 349
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 25928869,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 285217559,
+    "net": 259288690,
+    "vat": 25928869
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 25323,
+   "rateBp": 900,
+   "expected": {
+    "gross": 27602,
+    "net": 25323,
+    "vat": 2279
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 630132,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 3630761,
+    "net": 3000629,
+    "vat": 630132
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 173967,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 217459,
+    "net": 173967,
+    "vat": 43492
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 3950,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 39859,
+    "net": 35909,
+    "vat": 3950
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 10075735,
+   "rateBp": 800,
+   "expected": {
+    "gross": 136022423,
+    "net": 125946688,
+    "vat": 10075735
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 49609152,
+   "rateBp": 500,
+   "expected": {
+    "gross": 52089610,
+    "net": 49609152,
+    "vat": 2480458
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 4743561,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 47866843,
+    "net": 43123282,
+    "vat": 4743561
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 89480161,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 586592167,
+    "net": 497112006,
+    "vat": 89480161
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 2575,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 2575,
+    "net": 2146,
+    "vat": 429
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 84684043,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 398328647,
+    "net": 313644604,
+    "vat": 84684043
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 89713338,
+   "rateBp": 500,
+   "expected": {
+    "gross": 1883980098,
+    "net": 1794266760,
+    "vat": 89713338
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 4044,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 4934,
+    "net": 4044,
+    "vat": 890
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 3229,
+   "rateBp": 900,
+   "expected": {
+    "gross": 39107,
+    "net": 35878,
+    "vat": 3229
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 842604,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 4506100,
+    "net": 3663496,
+    "vat": 842604
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 56617994,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 56617994,
+    "net": 46030889,
+    "vat": 10587105
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 2297,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 2733,
+    "net": 2297,
+    "vat": 436
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 1373,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 6865,
+    "net": 5492,
+    "vat": 1373
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 4534,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 49874,
+    "net": 45340,
+    "vat": 4534
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 313802,
+   "rateBp": 500,
+   "expected": {
+    "gross": 313802,
+    "net": 298859,
+    "vat": 14943
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 430131,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 511856,
+    "net": 430131,
+    "vat": 81725
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 574060,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 3183424,
+    "net": 2609364,
+    "vat": 574060
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 151999,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 714958,
+    "net": 562959,
+    "vat": 151999
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 34366209,
+   "rateBp": 900,
+   "expected": {
+    "gross": 416212976,
+    "net": 381846767,
+    "vat": 34366209
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 571209,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 571209,
+    "net": 456967,
+    "vat": 114242
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 824150,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 997222,
+    "net": 824150,
+    "vat": 173072
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 75463583,
+   "rateBp": 500,
+   "expected": {
+    "gross": 75463583,
+    "net": 71870079,
+    "vat": 3593504
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 66994747,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 81733591,
+    "net": 66994747,
+    "vat": 14738844
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 559662,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 3103580,
+    "net": 2543918,
+    "vat": 559662
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 1954,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 11259,
+    "net": 9305,
+    "vat": 1954
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 481208,
+   "rateBp": 500,
+   "expected": {
+    "gross": 10105368,
+    "net": 9624160,
+    "vat": 481208
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 334270,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 334270,
+    "net": 271764,
+    "vat": 62506
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 3836,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 3836,
+    "net": 3144,
+    "vat": 692
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 54864,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 67483,
+    "net": 54864,
+    "vat": 12619
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 585,
+   "rateBp": 800,
+   "expected": {
+    "gross": 632,
+    "net": 585,
+    "vat": 47
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 90219752,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 424366982,
+    "net": 334147230,
+    "vat": 90219752
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 16395501,
+   "rateBp": 500,
+   "expected": {
+    "gross": 17215276,
+    "net": 16395501,
+    "vat": 819775
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 64640642,
+   "rateBp": 1800,
+   "expected": {
+    "gross": 64640642,
+    "net": 54780205,
+    "vat": 9860437
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 236,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 286,
+    "net": 236,
+    "vat": 50
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 1028,
+   "rateBp": 0,
+   "expected": {
+    "gross": 1028,
+    "net": 1028,
+    "vat": 0
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 74981318,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 415805491,
+    "net": 340824173,
+    "vat": 74981318
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 3820216,
+   "rateBp": 500,
+   "expected": {
+    "gross": 3820216,
+    "net": 3638301,
+    "vat": 181915
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 4094,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 4503,
+    "net": 4094,
+    "vat": 409
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 55527535,
+   "rateBp": 2300,
+   "expected": {
+    "gross": 296951600,
+    "net": 241424065,
+    "vat": 55527535
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 999716,
+   "rateBp": 900,
+   "expected": {
+    "gross": 999716,
+    "net": 917171,
+    "vat": 82545
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 44340027,
+   "rateBp": 500,
+   "expected": {
+    "gross": 44340027,
+    "net": 42228597,
+    "vat": 2111430
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 65604,
+   "rateBp": 900,
+   "expected": {
+    "gross": 71508,
+    "net": 65604,
+    "vat": 5904
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 3398,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 3398,
+    "net": 2808,
+    "vat": 590
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 414521,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 2596210,
+    "net": 2181689,
+    "vat": 414521
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 381741,
+   "rateBp": 2700,
+   "expected": {
+    "gross": 1795597,
+    "net": 1413856,
+    "vat": 381741
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 195746,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 2153206,
+    "net": 1957460,
+    "vat": 195746
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 45940070,
+   "rateBp": 2000,
+   "expected": {
+    "gross": 45940070,
+    "net": 38283392,
+    "vat": 7656678
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 91828,
+   "rateBp": 900,
+   "expected": {
+    "gross": 100093,
+    "net": 91828,
+    "vat": 8265
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 748809,
+   "rateBp": 1100,
+   "expected": {
+    "gross": 7556164,
+    "net": 6807355,
+    "vat": 748809
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 509382,
+   "rateBp": 800,
+   "expected": {
+    "gross": 550133,
+    "net": 509382,
+    "vat": 40751
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 21490635,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 236396985,
+    "net": 214906350,
+    "vat": 21490635
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 421770,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 421770,
+    "net": 383427,
+    "vat": 38343
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 96754495,
+   "rateBp": 500,
+   "expected": {
+    "gross": 2031844395,
+    "net": 1935089900,
+    "vat": 96754495
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 80031829,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 95237877,
+    "net": 80031829,
+    "vat": 15206048
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 80894385,
+   "rateBp": 900,
+   "expected": {
+    "gross": 88174880,
+    "net": 80894385,
+    "vat": 7280495
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 2605,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 2605,
+    "net": 2084,
+    "vat": 521
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 3715023,
+   "rateBp": 1900,
+   "expected": {
+    "gross": 3715023,
+    "net": 3121868,
+    "vat": 593155
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 63669117,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 77676323,
+    "net": 63669117,
+    "vat": 14007206
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 4019,
+   "rateBp": 2500,
+   "expected": {
+    "gross": 4019,
+    "net": 3215,
+    "vat": 804
+   }
+  },
+  {
+   "entered": "gross",
+   "minor": 35600275,
+   "rateBp": 1000,
+   "expected": {
+    "gross": 35600275,
+    "net": 32363886,
+    "vat": 3236389
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 3055,
+   "rateBp": 2200,
+   "expected": {
+    "gross": 16941,
+    "net": 13886,
+    "vat": 3055
+   }
+  },
+  {
+   "entered": "vat",
+   "minor": 995042,
+   "rateBp": 2100,
+   "expected": {
+    "gross": 5733337,
+    "net": 4738295,
+    "vat": 995042
+   }
+  },
+  {
+   "entered": "net",
+   "minor": 56219199,
+   "rateBp": 500,
+   "expected": {
+    "gross": 59030159,
+    "net": 56219199,
+    "vat": 2810960
+   }
+  }
+ ],
+ "vatCost": [
+  {
+   "name": "RO motorină 50% deductibil",
+   "treatment": "taxed",
+   "net": 100000,
+   "vat": 21000,
+   "gross": 121000,
+   "args": {
+    "ded": 50
+   },
+   "expected": {
+    "cost": 110500,
+    "recoverable": 10500,
+    "selfAssessedVat": 0,
+    "selfNonRecoverable": 0,
+    "nonRecoverableVat": 10500
+   }
+  },
+  {
+   "name": "DE motorină 19% / 50%",
+   "treatment": "taxed",
+   "net": 100000,
+   "vat": 19000,
+   "gross": 119000,
+   "args": {
+    "ded": 50,
+    "same_country": false
+   },
+   "expected": {
+    "cost": 109500,
+    "recoverable": 9500,
+    "selfAssessedVat": 0,
+    "selfNonRecoverable": 0,
+    "nonRecoverableVat": 9500
+   }
+  },
+  {
+   "name": "DE reparație 19% / 100%, rambursabil",
+   "treatment": "taxed",
+   "net": 250000,
+   "vat": 47500,
+   "gross": 297500,
+   "args": {
+    "ded": 100,
+    "same_country": false
+   },
+   "expected": {
+    "cost": 250000,
+    "recoverable": 47500,
+    "selfAssessedVat": 0,
+    "selfNonRecoverable": 0,
+    "nonRecoverableVat": 0
+   }
+  },
+  {
+   "name": "DE nerambursabil",
+   "treatment": "taxed",
+   "net": 250000,
+   "vat": 47500,
+   "gross": 297500,
+   "args": {
+    "ded": 100,
+    "same_country": false,
+    "refundable": false
+   },
+   "expected": {
+    "cost": 297500,
+    "recoverable": 0,
+    "selfAssessedVat": 0,
+    "selfNonRecoverable": 0,
+    "nonRecoverableVat": 47500
+   }
+  },
+  {
+   "name": "fără TVA (none)",
+   "treatment": "none",
+   "net": 87500,
+   "vat": 0,
+   "gross": 87500,
+   "args": {},
+   "expected": {
+    "cost": 87500,
+    "recoverable": 0,
+    "selfAssessedVat": 0,
+    "selfNonRecoverable": 0,
+    "nonRecoverableVat": 0
+   }
+  },
+  {
+   "name": "0% scutit (zero)",
+   "treatment": "zero",
+   "net": 87500,
+   "vat": 0,
+   "gross": 87500,
+   "args": {},
+   "expected": {
+    "cost": 87500,
+    "recoverable": 0,
+    "selfAssessedVat": 0,
+    "selfNonRecoverable": 0,
+    "nonRecoverableVat": 0
+   }
+  },
+  {
+   "name": "TVA nedeductibil",
+   "treatment": "nondeductible",
+   "net": 100000,
+   "vat": 21000,
+   "gross": 121000,
+   "args": {},
+   "expected": {
+    "cost": 121000,
+    "recoverable": 0,
+    "selfAssessedVat": 0,
+    "selfNonRecoverable": 0,
+    "nonRecoverableVat": 21000
+   }
+  },
+  {
+   "name": "bon (receipt) nu dă TVA recuperabil",
+   "treatment": "taxed",
+   "net": 100000,
+   "vat": 21000,
+   "gross": 121000,
+   "args": {
+    "documentation": "receipt"
+   },
+   "expected": {
+    "cost": 121000,
+    "recoverable": 0,
+    "selfAssessedVat": 0,
+    "selfNonRecoverable": 0,
+    "nonRecoverableVat": 21000
+   }
+  },
+  {
+   "name": "firmă neplătitoare",
+   "treatment": "taxed",
+   "net": 100000,
+   "vat": 21000,
+   "gross": 121000,
+   "args": {
+    "vat_payer": false
+   },
+   "expected": {
+    "cost": 121000,
+    "recoverable": 0,
+    "selfAssessedVat": 0,
+    "selfNonRecoverable": 0,
+    "nonRecoverableVat": 21000
+   }
+  },
+  {
+   "name": "taxare inversă 21% / 100%",
+   "treatment": "reverse",
+   "net": 100000,
+   "vat": 0,
+   "gross": 100000,
+   "args": {
+    "rate_bp": 2100
+   },
+   "expected": {
+    "cost": 100000,
+    "recoverable": 0,
+    "selfAssessedVat": 21000,
+    "selfNonRecoverable": 0,
+    "nonRecoverableVat": 0
+   }
+  },
+  {
+   "name": "taxare inversă 21% / 50%",
+   "treatment": "reverse",
+   "net": 100001,
+   "vat": 0,
+   "gross": 100001,
+   "args": {
+    "ded": 50,
+    "rate_bp": 2100
+   },
+   "expected": {
+    "cost": 110501,
+    "recoverable": 0,
+    "selfAssessedVat": 21000,
+    "selfNonRecoverable": 10500,
+    "nonRecoverableVat": 0
+   }
+  },
+  {
+   "name": "deducere rotunjire",
+   "treatment": "taxed",
+   "net": 33333,
+   "vat": 7000,
+   "gross": 40333,
+   "args": {
+    "ded": 50
+   },
+   "expected": {
+    "cost": 36833,
+    "recoverable": 3500,
+    "selfAssessedVat": 0,
+    "selfNonRecoverable": 0,
+    "nonRecoverableVat": 3500
+   }
+  }
+ ],
+ "rates": {
+  "EUR->RON": "5.3442000000",
+  "RON->EUR": "0.1871187456",
+  "HUF->RON": "0.0146786421",
+  "HUF->EUR": "0.0027466491",
+  "PLN->RON": "1.2482074039",
+  "EUR->HUF": "364.0800000000"
+ },
+ "convert": [
+  {
+   "minor": 8750,
+   "from": "EUR",
+   "to": "RON",
+   "rate": "5.3442000000",
+   "expected": 46762
+  },
+  {
+   "minor": 100,
+   "from": "EUR",
+   "to": "RON",
+   "rate": "5.3442000000",
+   "expected": 534
+  },
+  {
+   "minor": 1,
+   "from": "EUR",
+   "to": "RON",
+   "rate": "5.3442000000",
+   "expected": 5
+  },
+  {
+   "minor": 123456,
+   "from": "EUR",
+   "to": "RON",
+   "rate": "5.3442000000",
+   "expected": 659774
+  },
+  {
+   "minor": 99999999,
+   "from": "EUR",
+   "to": "RON",
+   "rate": "5.3442000000",
+   "expected": 534419995
+  },
+  {
+   "minor": 428675,
+   "from": "RON",
+   "to": "EUR",
+   "rate": "0.1871187456",
+   "expected": 80213
+  },
+  {
+   "minor": 1,
+   "from": "RON",
+   "to": "EUR",
+   "rate": "0.1871187456",
+   "expected": 0
+  },
+  {
+   "minor": 100000,
+   "from": "RON",
+   "to": "EUR",
+   "rate": "0.1871187456",
+   "expected": 18712
+  },
+  {
+   "minor": 123456,
+   "from": "HUF",
+   "to": "RON",
+   "rate": "0.0146786421",
+   "expected": 181217
+  },
+  {
+   "minor": 1,
+   "from": "HUF",
+   "to": "RON",
+   "rate": "0.0146786421",
+   "expected": 1
+  },
+  {
+   "minor": 3020000,
+   "from": "HUF",
+   "to": "RON",
+   "rate": "0.0146786421",
+   "expected": 4432950
+  },
+  {
+   "minor": 99,
+   "from": "HUF",
+   "to": "RON",
+   "rate": "0.0146786421",
+   "expected": 145
+  },
+  {
+   "minor": 123456,
+   "from": "HUF",
+   "to": "EUR",
+   "rate": "0.0027466491",
+   "expected": 33909
+  },
+  {
+   "minor": 3020000,
+   "from": "HUF",
+   "to": "EUR",
+   "rate": "0.0027466491",
+   "expected": 829488
+  },
+  {
+   "minor": 125000,
+   "from": "PLN",
+   "to": "RON",
+   "rate": "1.2482074039",
+   "expected": 156026
+  },
+  {
+   "minor": 33,
+   "from": "PLN",
+   "to": "RON",
+   "rate": "1.2482074039",
+   "expected": 41
+  },
+  {
+   "minor": 8750,
+   "from": "EUR",
+   "to": "HUF",
+   "rate": "364.0800000000",
+   "expected": 31857
+  },
+  {
+   "minor": 1,
+   "from": "EUR",
+   "to": "HUF",
+   "rate": "364.0800000000",
+   "expected": 4
+  }
+ ],
+ "crossRate": [
+  {
+   "perEur": {
+    "RON": "5.3442",
+    "HUF": "364.08",
+    "PLN": "4.2815"
+   },
+   "from": "HUF",
+   "to": "RON",
+   "expected": "0.0146786421"
+  },
+  {
+   "perEur": {
+    "RON": "5.3442",
+    "HUF": "364.08",
+    "PLN": "4.2815"
+   },
+   "from": "PLN",
+   "to": "RON",
+   "expected": "1.2482074039"
+  },
+  {
+   "perEur": {
+    "RON": "5.3442",
+    "HUF": "364.08",
+    "PLN": "4.2815"
+   },
+   "from": "RON",
+   "to": "EUR",
+   "expected": "0.1871187456"
+  },
+  {
+   "perEur": {
+    "RON": "5.3442",
+    "HUF": "364.08",
+    "PLN": "4.2815"
+   },
+   "from": "HUF",
+   "to": "EUR",
+   "expected": "0.0027466491"
+  }
+ ],
+ "rateDiv": [
+  {
+   "a": "5.3442",
+   "b": "364.08",
+   "expected": "0.0146786421"
+  },
+  {
+   "a": "1",
+   "b": "5.3442",
+   "expected": "0.1871187456"
+  }
+ ],
+ "eurReconciliation": {
+  "entries": [
+   {
+    "ronMinor": 428675,
+    "eurMinor": 80213
+   },
+   {
+    "ronMinor": 74398,
+    "eurMinor": 13921
+   },
+   {
+    "ronMinor": 354277,
+    "eurMinor": 66292
+   },
+   {
+    "ronMinor": 123456,
+    "eurMinor": 23101
+   },
+   {
+    "ronMinor": 1,
+    "eurMinor": 0
+   }
+  ],
+  "sumEurFrozen": 183527,
+  "totalRon": 980807,
+  "eurOfTotalRon": 183527,
+  "note": "suma EUR înghețate poate diferi de EUR(total RON); testul reconciliază în fiecare monedă separat"
+ },
+ "allocate": [
+  {
+   "total": 600001,
+   "weights": [
+    4,
+    2
+   ],
+   "expected": [
+    400000,
+    200001
+   ]
+  },
+  {
+   "total": 100,
+   "weights": [
+    1,
+    1,
+    1
+   ],
+   "expected": [
+    33,
+    33,
+    34
+   ]
+  },
+  {
+   "total": 1,
+   "weights": [
+    1,
+    1
+   ],
+   "expected": [
+    0,
+    1
+   ]
+  },
+  {
+   "total": 999,
+   "weights": [
+    3,
+    3,
+    3
+   ],
+   "expected": [
+    333,
+    333,
+    333
+   ]
+  },
+  {
+   "total": 10000,
+   "weights": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "expected": [
+    1000,
+    2000,
+    3000,
+    4000
+   ]
+  },
+  {
+   "total": 7,
+   "weights": [
+    5
+   ],
+   "expected": [
+    7
+   ]
+  },
+  {
+   "total": 123456,
+   "weights": [
+    10,
+    20,
+    30
+   ],
+   "expected": [
+    20576,
+    41152,
+    61728
+   ]
+  },
+  {
+   "total": 0,
+   "weights": [
+    1,
+    2
+   ],
+   "expected": [
+    0,
+    0
+   ]
+  }
+ ],
+ "prorata": {
+  "total": 600001,
+  "monthDays": {
+   "2026-10": 4,
+   "2026-11": 2
+  },
+  "course": {
+   "load": "2026-10-28",
+   "unload": "2026-11-02"
+  },
+  "expected": [
+   400000,
+   200001
+  ],
+  "note": "6.000,01 ⇒ 4.000,00 / 2.000,01 (4 zile în octombrie, 2 în noiembrie), 11.1"
+ },
+ "fmtMoney": [
+  {
+   "minor": 354277,
+   "currency": "RON",
+   "expected": "3.542,77 lei"
+  },
+  {
+   "minor": 354277,
+   "currency": "RON",
+   "code": true,
+   "expected": "3.542,77 RON"
+  },
+  {
+   "minor": 0,
+   "currency": "RON",
+   "expected": "0,00 lei"
+  },
+  {
+   "minor": 0,
+   "currency": "RON",
+   "code": true,
+   "expected": "0,00 RON"
+  },
+  {
+   "minor": -354277,
+   "currency": "RON",
+   "expected": "−3.542,77 lei"
+  },
+  {
+   "minor": -354277,
+   "currency": "RON",
+   "code": true,
+   "expected": "−3.542,77 RON"
+  },
+  {
+   "minor": -1,
+   "currency": "RON",
+   "expected": "−0,01 lei"
+  },
+  {
+   "minor": -1,
+   "currency": "RON",
+   "code": true,
+   "expected": "−0,01 RON"
+  },
+  {
+   "minor": 99999999,
+   "currency": "RON",
+   "expected": "999.999,99 lei"
+  },
+  {
+   "minor": 99999999,
+   "currency": "RON",
+   "code": true,
+   "expected": "999.999,99 RON"
+  },
+  {
+   "minor": 123456,
+   "currency": "HUF",
+   "expected": "123.456 HUF"
+  },
+  {
+   "minor": 123456,
+   "currency": "HUF",
+   "code": true,
+   "expected": "123.456 HUF"
+  },
+  {
+   "minor": -123456,
+   "currency": "HUF",
+   "expected": "−123.456 HUF"
+  },
+  {
+   "minor": -123456,
+   "currency": "HUF",
+   "code": true,
+   "expected": "−123.456 HUF"
+  },
+  {
+   "minor": 0,
+   "currency": "HUF",
+   "expected": "0 HUF"
+  },
+  {
+   "minor": 0,
+   "currency": "HUF",
+   "code": true,
+   "expected": "0 HUF"
+  },
+  {
+   "minor": 8750,
+   "currency": "EUR",
+   "expected": "87,50 €"
+  },
+  {
+   "minor": 8750,
+   "currency": "EUR",
+   "code": true,
+   "expected": "87,50 EUR"
+  },
+  {
+   "minor": 125000,
+   "currency": "PLN",
+   "expected": "1.250,00 PLN"
+  },
+  {
+   "minor": 125000,
+   "currency": "PLN",
+   "code": true,
+   "expected": "1.250,00 PLN"
+  },
+  {
+   "minor": 123400,
+   "currency": "RON",
+   "expected": "1.234,00 lei"
+  },
+  {
+   "minor": 123400,
+   "currency": "RON",
+   "code": true,
+   "expected": "1.234,00 RON"
+  },
+  {
+   "minor": 100000,
+   "currency": "RON",
+   "expected": "1.000,00 lei"
+  },
+  {
+   "minor": 100000,
+   "currency": "RON",
+   "code": true,
+   "expected": "1.000,00 RON"
+  },
+  {
+   "minor": 100,
+   "currency": "RON",
+   "expected": "1,00 lei"
+  },
+  {
+   "minor": 100,
+   "currency": "RON",
+   "code": true,
+   "expected": "1,00 RON"
+  },
+  {
+   "minor": 5,
+   "currency": "EUR",
+   "expected": "0,05 €"
+  },
+  {
+   "minor": 5,
+   "currency": "EUR",
+   "code": true,
+   "expected": "0,05 EUR"
+  },
+  {
+   "minor": 99999999999,
+   "currency": "RON",
+   "expected": "999.999.999,99 lei"
+  },
+  {
+   "minor": 99999999999,
+   "currency": "RON",
+   "code": true,
+   "expected": "999.999.999,99 RON"
+  },
+  {
+   "minor": -8750,
+   "currency": "EUR",
+   "expected": "−87,50 €"
+  },
+  {
+   "minor": -8750,
+   "currency": "EUR",
+   "code": true,
+   "expected": "−87,50 EUR"
+  },
+  {
+   "minor": 1,
+   "currency": "HUF",
+   "expected": "1 HUF"
+  },
+  {
+   "minor": 1,
+   "currency": "HUF",
+   "code": true,
+   "expected": "1 HUF"
+  }
+ ],
+ "fmtKm": [
+  {
+   "meters": 8376300,
+   "decimals": 1,
+   "expected": "8.376,3 km"
+  },
+  {
+   "meters": 8376300,
+   "decimals": 0,
+   "expected": "8.376 km"
+  },
+  {
+   "meters": 0,
+   "decimals": 1,
+   "expected": "0,0 km"
+  },
+  {
+   "meters": 999,
+   "decimals": 1,
+   "expected": "1,0 km"
+  },
+  {
+   "meters": 8377400,
+   "decimals": 1,
+   "expected": "8.377,4 km"
+  },
+  {
+   "meters": 123456789,
+   "decimals": 1,
+   "expected": "123.456,8 km"
+  },
+  {
+   "meters": 450,
+   "decimals": 0,
+   "expected": "0 km"
+  },
+  {
+   "meters": -1500,
+   "decimals": 1,
+   "expected": "−1,5 km"
+  }
+ ],
+ "fmtPct": [
+  {
+   "ratio": "0.125",
+   "decimals": 1,
+   "expected": "12,5%"
+  },
+  {
+   "ratio": "0.2",
+   "decimals": 0,
+   "expected": "20%"
+  },
+  {
+   "ratio": "0",
+   "decimals": 1,
+   "expected": "0,0%"
+  },
+  {
+   "ratio": "1",
+   "decimals": 0,
+   "expected": "100%"
+  },
+  {
+   "ratio": "0.05",
+   "decimals": 1,
+   "expected": "5,0%"
+  },
+  {
+   "ratio": "0.0049",
+   "decimals": 1,
+   "expected": "0,5%"
+  },
+  {
+   "ratio": "12.345",
+   "decimals": 0,
+   "expected": "1.235%"
+  }
+ ],
+ "parseAmount": [
+  {
+   "text": "1234,56",
+   "cur": "RON",
+   "ok": true,
+   "minor": 123456
+  },
+  {
+   "text": "1234.56",
+   "cur": "RON",
+   "ok": true,
+   "minor": 123456
+  },
+  {
+   "text": "1 234,56",
+   "cur": "RON",
+   "ok": true,
+   "minor": 123456
+  },
+  {
+   "text": "1.234,56",
+   "cur": "RON",
+   "ok": true,
+   "minor": 123456
+  },
+  {
+   "text": "3542,77",
+   "cur": "RON",
+   "ok": true,
+   "minor": 354277
+  },
+  {
+   "text": "0,05",
+   "cur": "EUR",
+   "ok": true,
+   "minor": 5
+  },
+  {
+   "text": "100",
+   "cur": "RON",
+   "ok": true,
+   "minor": 10000
+  },
+  {
+   "text": "123456",
+   "cur": "HUF",
+   "ok": true,
+   "minor": 123456
+  },
+  {
+   "text": "1.234",
+   "cur": "RON",
+   "ok": true,
+   "ambiguous": true,
+   "interpretations": [
+    123400,
+    123
+   ]
+  },
+  {
+   "text": "12.500",
+   "cur": "RON",
+   "ok": true,
+   "ambiguous": true,
+   "interpretations": [
+    1250000,
+    1250
+   ]
+  },
+  {
+   "text": "12,5",
+   "cur": "HUF",
+   "ok": false,
+   "why": "forinții nu au subdiviziuni"
+  },
+  {
+   "text": "abc",
+   "cur": "RON",
+   "ok": false,
+   "why": "nu e număr"
+  }
+ ],
+ "addMonths": [
+  {
+   "from": "2026-01-31",
+   "months": 1,
+   "expected": "2026-02-28"
+  },
+  {
+   "from": "2028-01-31",
+   "months": 1,
+   "expected": "2028-02-29"
+  },
+  {
+   "from": "2026-03-31",
+   "months": 1,
+   "expected": "2026-04-30"
+  },
+  {
+   "from": "2026-12-31",
+   "months": 2,
+   "expected": "2027-02-28"
+  },
+  {
+   "from": "2026-01-30",
+   "months": 1,
+   "expected": "2026-02-28"
+  },
+  {
+   "from": "2026-08-31",
+   "months": 6,
+   "expected": "2027-02-28"
+  },
+  {
+   "from": "2026-05-31",
+   "months": -3,
+   "expected": "2026-02-28"
+  },
+  {
+   "from": "2028-02-29",
+   "months": 12,
+   "expected": "2029-02-28"
+  },
+  {
+   "from": "2026-10-15",
+   "months": 3,
+   "expected": "2027-01-15"
+  }
+ ],
+ "day31": {
+  "2026": [
+   "2026-01-31",
+   "2026-02-28",
+   "2026-03-31",
+   "2026-04-30",
+   "2026-05-31",
+   "2026-06-30",
+   "2026-07-31",
+   "2026-08-31",
+   "2026-09-30",
+   "2026-10-31",
+   "2026-11-30",
+   "2026-12-31"
+  ],
+  "2027": [
+   "2027-01-31",
+   "2027-02-28",
+   "2027-03-31",
+   "2027-04-30",
+   "2027-05-31",
+   "2027-06-30",
+   "2027-07-31",
+   "2027-08-31",
+   "2027-09-30",
+   "2027-10-31",
+   "2027-11-30",
+   "2027-12-31"
+  ],
+  "2028": [
+   "2028-01-31",
+   "2028-02-29",
+   "2028-03-31",
+   "2028-04-30",
+   "2028-05-31",
+   "2028-06-30",
+   "2028-07-31",
+   "2028-08-31",
+   "2028-09-30",
+   "2028-10-31",
+   "2028-11-30",
+   "2028-12-31"
+  ]
+ },
+ "daysInMonth": [
+  {
+   "year": 2026,
+   "month": 2,
+   "expected": 28
+  },
+  {
+   "year": 2028,
+   "month": 2,
+   "expected": 29
+  },
+  {
+   "year": 2100,
+   "month": 2,
+   "expected": 28
+  },
+  {
+   "year": 2000,
+   "month": 2,
+   "expected": 29
+  },
+  {
+   "year": 2026,
+   "month": 4,
+   "expected": 30
+  },
+  {
+   "year": 2026,
+   "month": 12,
+   "expected": 31
+  }
+ ],
+ "recurring": {
+  "catchupMonthEnd": {
+   "startDate": "2026-01-31",
+   "dayOfMonth": 31,
+   "frequency": "monthly",
+   "today": "2026-05-10",
+   "expectedDates": [
+    "2026-01-31",
+    "2026-02-28",
+    "2026-03-31",
+    "2026-04-30"
+   ]
+  },
+  "catchupLeap": {
+   "startDate": "2028-01-31",
+   "dayOfMonth": 31,
+   "frequency": "monthly",
+   "today": "2028-03-31",
+   "expectedDates": [
+    "2028-01-31",
+    "2028-02-29",
+    "2028-03-31"
+   ]
+  },
+  "quarterly": {
+   "startDate": "2026-01-15",
+   "frequency": "quarterly",
+   "dayOfMonth": 15,
+   "today": "2026-11-20",
+   "expectedDates": [
+    "2026-01-15",
+    "2026-04-15",
+    "2026-07-15",
+    "2026-10-15"
+   ]
+  },
+  "midYearChange": {
+   "template": {
+    "startDate": "2026-01-01",
+    "dayOfMonth": 5,
+    "amount": "1500.00",
+    "currency": "RON"
+   },
+   "change": {
+    "effectiveFrom": "2026-07",
+    "amount": "1650.00"
+   },
+   "today": "2026-09-10",
+   "expected": [
+    {
+     "date": "2026-01-05",
+     "amountMinor": 150000
+    },
+    {
+     "date": "2026-02-05",
+     "amountMinor": 150000
+    },
+    {
+     "date": "2026-03-05",
+     "amountMinor": 150000
+    },
+    {
+     "date": "2026-04-05",
+     "amountMinor": 150000
+    },
+    {
+     "date": "2026-05-05",
+     "amountMinor": 150000
+    },
+    {
+     "date": "2026-06-05",
+     "amountMinor": 150000
+    },
+    {
+     "date": "2026-07-05",
+     "amountMinor": 165000
+    },
+    {
+     "date": "2026-08-05",
+     "amountMinor": 165000
+    },
+    {
+     "date": "2026-09-05",
+     "amountMinor": 165000
+    }
+   ]
+  },
+  "endedTemplate": {
+   "template": {
+    "startDate": "2026-01-10",
+    "endDate": "2026-03-20",
+    "dayOfMonth": 10,
+    "frequency": "monthly"
+   },
+   "today": "2026-09-01",
+   "expectedDates": [
+    "2026-01-10",
+    "2026-02-10",
+    "2026-03-10"
+   ]
+  }
+ },
+ "photoVat21": [
+  {
+   "net": 354277,
+   "expectedVat": 74398,
+   "vatInSheet": 74398,
+   "grossInSheet": 428675
+  },
+  {
+   "net": 606468,
+   "expectedVat": 127358,
+   "vatInSheet": 127358,
+   "grossInSheet": 733826
+  },
+  {
+   "net": 253610,
+   "expectedVat": 53258,
+   "vatInSheet": 53258,
+   "grossInSheet": 306868
+  },
+  {
+   "net": 140000,
+   "expectedVat": 29400,
+   "vatInSheet": 29400,
+   "grossInSheet": 169400
+  },
+  {
+   "net": 491732,
+   "expectedVat": 103264,
+   "vatInSheet": 103264,
+   "grossInSheet": 594996
+  }
+ ],
+ "photoDerivedFromGross": [
+  {
+   "grossMinor": 187660,
+   "netMinor": 155091,
+   "vatMinor": 32569
+  },
+  {
+   "grossMinor": 253920,
+   "netMinor": 209851,
+   "vatMinor": 44069
+  }
+ ]
+}

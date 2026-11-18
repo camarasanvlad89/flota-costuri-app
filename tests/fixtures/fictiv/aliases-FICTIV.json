@@ -1,0 +1,22 @@
+[
+  {
+    "name": "BEKESCSABA",
+    "locality": "Bichișciaba",
+    "countryCode": "HU",
+    "confirmed": true,
+    "note": "FICTIV: grafia GPS diferă (exonim românesc)"
+  },
+  {
+    "name": "ORASU NOU",
+    "locality": "Orașu Nou",
+    "countryCode": "RO",
+    "confirmed": true,
+    "note": "FICTIV: baza (depou)"
+  },
+  {
+    "name": "SZATYMAZ",
+    "locality": "Szatymaz",
+    "countryCode": "HU",
+    "confirmed": true
+  }
+]

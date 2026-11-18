@@ -1,0 +1,48 @@
+{
+  "generatedBy": "build/vendor.mjs",
+  "files": {
+    "preact.module.js": {
+      "source": "npm:preact@10.29.8",
+      "sha256": "c30e721ebfdc6e2ad4c18c14d2dfb82667829c8aec27de1207774e3fc16858a8",
+      "npmIntegrity": "sha512-ej2aVZ+vZ8WO7tvlQWRM9N63A0KzF9q4mWJfDUHgYaIofWY9hu74QdnQrjoPMmZi2/nZ5gN0bJCQF49xQqx09Q=="
+    },
+    "preact-hooks.module.js": {
+      "source": "npm:preact@10.29.8",
+      "sha256": "a6ee626f2d01570592dd569a792e3f050154aa02890eead8c223fa3ed5aa3d5a",
+      "npmIntegrity": "sha512-ej2aVZ+vZ8WO7tvlQWRM9N63A0KzF9q4mWJfDUHgYaIofWY9hu74QdnQrjoPMmZi2/nZ5gN0bJCQF49xQqx09Q=="
+    },
+    "LICENSE.preact": {
+      "source": "npm:preact@10.29.8",
+      "sha256": "1fe6958409c8c257a70c587a18b6f7f412b179b456630790d30b2ec9a8e4b7d4",
+      "npmIntegrity": "sha512-ej2aVZ+vZ8WO7tvlQWRM9N63A0KzF9q4mWJfDUHgYaIofWY9hu74QdnQrjoPMmZi2/nZ5gN0bJCQF49xQqx09Q=="
+    },
+    "htm.module.js": {
+      "source": "npm:htm@3.1.1",
+      "sha256": "ab33dd3f38059b9be4d5f5350128eefb2356639c4e0bbe9d9e8b3ba75847e9e4",
+      "npmIntegrity": "sha512-983Vyg8NwUE7JkZ6NmOqpCZ+sh1bKv2iYTlUkzlWmA5JD2acKoxd4KVxbMmxX/85mtfdnDmTFoNKcg5DGAvxNQ=="
+    },
+    "LICENSE.htm": {
+      "source": "npm:htm@3.1.1",
+      "sha256": "740725f7252e750af735d0028cc534970772f513331e9f68150fede8fb3ce00f",
+      "npmIntegrity": "sha512-983Vyg8NwUE7JkZ6NmOqpCZ+sh1bKv2iYTlUkzlWmA5JD2acKoxd4KVxbMmxX/85mtfdnDmTFoNKcg5DGAvxNQ=="
+    },
+    "fflate.browser.js": {
+      "source": "npm:fflate@0.8.3",
+      "sha256": "b7ca4450b19559a1d50eb381adcee94b82449674be4cd17789d9beba7e6122a1",
+      "npmIntegrity": "sha512-tbZNuJrLwGUp3zshBtdy4W+ORxZuIh8a5ilyIEQDC5rY1f3U20JMry0Ll3WBzU58EZKsEuJFXhb5gwv8CsPvgA=="
+    },
+    "LICENSE.fflate": {
+      "source": "npm:fflate@0.8.3",
+      "sha256": "0a1df3a083d0c010560aa342e87959c8c1070e6fd54545741f083f22d0c8b551",
+      "npmIntegrity": "sha512-tbZNuJrLwGUp3zshBtdy4W+ORxZuIh8a5ilyIEQDC5rY1f3U20JMry0Ll3WBzU58EZKsEuJFXhb5gwv8CsPvgA=="
+    },
+    "xlsx.full.min.js": {
+      "source": "https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js",
+      "sha256": "cc015130aa8521e7f088f88898eba949ccdcbfb38df0bd129b44b7273c3a6f41"
+    },
+    "LICENSE.xlsx": {
+      "source": "https://cdn.sheetjs.com/xlsx-0.20.3/package/LICENSE",
+      "sha256": "4d2a38ac35cda06a555c84074a819d413339cd3691b822cae50f8f322fe01f64"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "_comment": "FICTIV. Cursa 1 începe pe 30.09 22:10 și se termină pe 01.10 02:40; cheia = detId(plăcuță, start). Cursa 2 < 2 km = manevră.",
+  "tripsCount": 3,
+  "totalM": 329500,
+  "under2km": 1,
+  "startDayOfTrip1": "2026-09-30",
+  "stopDayOfTrip1": "2026-10-01"
+}

@@ -1,0 +1,179 @@
+{
+ "_comment": "GENERAT de make_ref.py (XlsxWriter 3.3.1). Nu edita.",
+ "parts": [
+  "[Content_Types].xml",
+  "_rels/.rels",
+  "docProps/app.xml",
+  "docProps/core.xml",
+  "xl/_rels/workbook.xml.rels",
+  "xl/charts/chartN.xml",
+  "xl/drawings/_rels/drawingN.xml.rels",
+  "xl/drawings/drawingN.xml",
+  "xl/sharedStrings.xml",
+  "xl/styles.xml",
+  "xl/theme/themeN.xml",
+  "xl/workbook.xml",
+  "xl/worksheets/_rels/sheetN.xml.rels",
+  "xl/worksheets/sheetN.xml"
+ ],
+ "contentTypeOverridesByKind": {
+  "/docProps/app.xml": "application/vnd.openxmlformats-officedocument.extended-properties+xml",
+  "/docProps/core.xml": "application/vnd.openxmlformats-package.core-properties+xml",
+  "/xl/charts/chartN.xml": "application/vnd.openxmlformats-officedocument.drawingml.chart+xml",
+  "/xl/drawings/drawingN.xml": "application/vnd.openxmlformats-officedocument.drawing+xml",
+  "/xl/sharedStrings.xml": "application/vnd.openxmlformats-officedocument.spreadsheetml.sharedStrings+xml",
+  "/xl/styles.xml": "application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml",
+  "/xl/theme/themeN.xml": "application/vnd.openxmlformats-officedocument.theme+xml",
+  "/xl/workbook.xml": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml",
+  "/xl/worksheets/sheetN.xml": "application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"
+ },
+ "contentTypeDefaults": {
+  "rels": "application/vnd.openxmlformats-package.relationships+xml",
+  "xml": "application/xml"
+ },
+ "relationshipTypesByRels": {
+  "_rels/.rels": [
+   "http://schemas.openxmlformats.org/officeDocument/2006/relationships/extended-properties",
+   "http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument",
+   "http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties"
+  ],
+  "xl/_rels/workbook.xml.rels": [
+   "http://schemas.openxmlformats.org/officeDocument/2006/relationships/sharedStrings",
+   "http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles",
+   "http://schemas.openxmlformats.org/officeDocument/2006/relationships/theme",
+   "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet"
+  ],
+  "xl/drawings/_rels/drawingN.xml.rels": [
+   "http://schemas.openxmlformats.org/officeDocument/2006/relationships/chart"
+  ],
+  "xl/worksheets/_rels/sheetN.xml.rels": [
+   "http://schemas.openxmlformats.org/officeDocument/2006/relationships/drawing"
+  ]
+ },
+ "chartChildOrder": {
+  "c:chartSpace": [
+   "c:lang",
+   "c:chart",
+   "c:printSettings"
+  ],
+  "c:chart": [
+   "c:title",
+   "c:plotArea",
+   "c:legend",
+   "c:plotVisOnly"
+  ],
+  "c:title": [
+   "c:tx",
+   "c:layout"
+  ],
+  "c:tx": [
+   "c:strRef",
+   "c:v",
+   "c:rich"
+  ],
+  "c:rich": [
+   "a:bodyPr",
+   "a:lstStyle",
+   "a:p"
+  ],
+  "a:p": [
+   "a:pPr",
+   "a:r"
+  ],
+  "a:pPr": [
+   "a:defRPr"
+  ],
+  "a:r": [
+   "a:rPr",
+   "a:t"
+  ],
+  "c:plotArea": [
+   "c:layout",
+   "c:barChart",
+   "c:catAx",
+   "c:valAx"
+  ],
+  "c:barChart": [
+   "c:barDir",
+   "c:grouping",
+   "c:ser",
+   "c:overlap",
+   "c:axId"
+  ],
+  "c:ser": [
+   "c:idx",
+   "c:order",
+   "c:tx",
+   "c:spPr",
+   "c:cat",
+   "c:val"
+  ],
+  "c:spPr": [
+   "a:solidFill"
+  ],
+  "a:solidFill": [
+   "a:srgbClr"
+  ],
+  "c:cat": [
+   "c:strRef"
+  ],
+  "c:strRef": [
+   "c:f",
+   "c:strCache"
+  ],
+  "c:strCache": [
+   "c:ptCount",
+   "c:pt"
+  ],
+  "c:pt": [
+   "c:v"
+  ],
+  "c:val": [
+   "c:numRef"
+  ],
+  "c:numRef": [
+   "c:f",
+   "c:numCache"
+  ],
+  "c:numCache": [
+   "c:formatCode",
+   "c:ptCount",
+   "c:pt"
+  ],
+  "c:catAx": [
+   "c:axId",
+   "c:scaling",
+   "c:axPos",
+   "c:tickLblPos",
+   "c:crossAx",
+   "c:crosses",
+   "c:auto",
+   "c:lblAlgn",
+   "c:lblOffset"
+  ],
+  "c:scaling": [
+   "c:orientation"
+  ],
+  "c:valAx": [
+   "c:axId",
+   "c:scaling",
+   "c:axPos",
+   "c:majorGridlines",
+   "c:numFmt",
+   "c:tickLblPos",
+   "c:crossAx",
+   "c:crosses",
+   "c:crossBetween"
+  ],
+  "c:printSettings": [
+   "c:headerFooter",
+   "c:pageMargins",
+   "c:pageSetup"
+  ],
+  "c:legend": [
+   "c:legendPos",
+   "c:layout"
+  ]
+ },
+ "sharedStrings": true
+}

@@ -1,0 +1,31 @@
+{
+  "_comment": "Un singur curs pinned pentru TOATE testele (5.3). Nu este o afirmație despre BCE/BNR la o anumită zi. Diferența BCE v1/v2 observată la 14.10.2026 (5,3442 vs 5,3429) e motivul pentru care sursa se stochează, dar nu intră în teste.",
+  "base": "EUR",
+  "date": "2026-10-14",
+  "perEur": {
+    "EUR_RON": "5.3442",
+    "EUR_HUF": "364.08",
+    "EUR_PLN": "4.2815",
+    "EUR_CZK": "24.31",
+    "EUR_USD": "1.0842",
+    "EUR_GBP": "0.8420",
+    "EUR_CHF": "0.9315",
+    "EUR_BGN": "1.9558"
+  },
+  "frankfurterShape": {
+    "amount": 1,
+    "base": "EUR",
+    "date": "2026-10-14",
+    "rates": {
+      "RON": 5.3442,
+      "HUF": 364.08,
+      "PLN": 4.2815,
+      "CZK": 24.31,
+      "USD": 1.0842
+    }
+  },
+  "derived": {
+    "HUF_RON": "0.0146782052",
+    "_howto": "RON per 1 HUF = EUR_RON / EUR_HUF, 10 zecimale (calculat în golden/expected.json)"
+  }
+}
