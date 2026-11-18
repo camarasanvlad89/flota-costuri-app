@@ -1,0 +1,23 @@
+{
+  "appVersion": "1.0.0",
+  "buildId": "1.0.0",
+  "builtAt": "2026-11-18T18:01:10.522Z",
+  "files": {
+    "app.ad034f1eea.js": 1587231,
+    "app.6c30d89991.css": 32287,
+    "config.js": 540,
+    "icons/icon-180.png": 629,
+    "icons/icon-192.png": 718,
+    "icons/icon-512.png": 3768,
+    "manifest.webmanifest": 372,
+    "sw.js": 992,
+    "index.html": 1213,
+    "404.html": 1213,
+    ".nojekyll": 0,
+    "_headers": 1003,
+    "flota-costuri.html": 1620464
+  },
+  "jsGzipBytes": 552383,
+  "singleFileBytes": 1620464,
+  "cspHashes": []
+}
