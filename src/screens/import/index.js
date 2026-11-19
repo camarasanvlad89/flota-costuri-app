@@ -1,7 +1,7 @@
 import { html, useState } from '../../ui/dom.js';
 import { t } from '../../ui/strings.js';
 import { useCtx, useCollection } from '../../ui/hooks.js';
-import { Tabs, PageHeader, Card, Table, Button, Note } from '../../ui/components/index.js';
+import { HelpLink, Tabs, PageHeader, Card, Table, Button, Note } from '../../ui/components/index.js';
 import { CoursesWizard } from './CoursesWizard.js';
 import { GpsImport } from './GpsImport.js';
 import { ExpensesImport } from './ExpensesImport.js';
@@ -40,7 +40,7 @@ function RecentImports() {
 
 function ImportScreen({ query }) {
   const [tab, setTab] = useState(query.get('tab') || 'curse');
-  return html`<div class="stack"><${PageHeader} title=${t.nav.import} sub="Nimic nu se scrie până nu apeși „Importă”." />
+  return html`<div class="stack"><${PageHeader} title=${t.nav.import} sub="Nimic nu se scrie până nu apeși „Importă”."><${HelpLink} id="ecran-import" /><//>
     <${Tabs} tabs=${TABS} value=${tab} onChange=${setTab} label="Tip import" />
     ${tab === 'curse' ? html`<${CoursesWizard} />` : null}
     ${tab === 'gps' ? html`<${GpsImport} />` : null}

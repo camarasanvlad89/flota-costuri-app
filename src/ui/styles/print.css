@@ -2,7 +2,7 @@
 @media print{
   :root{color-scheme:light}
   body{background:#fff;color:#000;font-size:11pt}
-  .side,.top,.bands,.toasts,.global-progress,.no-print,.btn,.ibtn,.skip,.tabs-row{display:none!important}
+  .side,.top,.bands,.notices,.toasts,.global-progress,.no-print,.btn,.ibtn,.skip,.tabs-row{display:none!important}
   .app{display:block}
   .page{padding:0;max-width:none}
   .card{border:0;box-shadow:none;padding:0}
@@ -12,3 +12,15 @@
   .print-only{display:block!important}
 }
 .print-only{display:none}
+
+/* Ghid: se tipărește tot conținutul, fără cuprins și fără butoane */
+@media print{
+  .guide-toc,.guide-tools,.mnav,.help-link{display:none!important}
+  .guide-split{display:block}
+  .guide-body[hidden]{display:grid!important}
+  .guide-card{border:0;break-inside:avoid;padding:0 0 8px}
+  .guide-h button{padding:6px 0;font-size:12pt;min-height:0}
+  .guide-h button .ic{display:none}
+  .guide-sec{break-after:avoid;margin-top:14pt;font-size:15pt}
+  .glink{color:inherit;text-decoration:none}
+}

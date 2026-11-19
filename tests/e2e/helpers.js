@@ -5,7 +5,7 @@ import { pathToFileURL } from 'node:url';
 
 export const SINGLE_FILE_URL = pathToFileURL(join(DIST, 'flota-costuri.html')).href;
 /** Ecranele de parcurs (rute hash, 2.3). */
-export const ROUTES = ['#/acasa', '#/tranzactii', '#/nou/cheltuiala', '#/nou/venit', '#/verificare', '#/curse', '#/import', '#/confruntare', '#/km-pe-gol', '#/rapoarte', '#/setari/firma', '#/setari/cheltuieli-fixe'];
+export const ROUTES = ['#/acasa', '#/tranzactii', '#/nou/cheltuiala', '#/nou/venit', '#/verificare', '#/curse', '#/import', '#/confruntare', '#/km-pe-gol', '#/rapoarte', '#/setari/firma', '#/setari/cheltuieli-fixe', '#/ghid', '#/ghid/rec-backup'];
 
 /** Pornește urmărirea erorilor de consolă/CSP și a cererilor către gazde externe. */
 export function watch(page, { allowExternal = false } = {}) {

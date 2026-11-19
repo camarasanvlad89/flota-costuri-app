@@ -1,3 +1,5 @@
+import { zileRo } from './selectors.js';
+
 // Toate textele comune afișate. Ecranele își țin textele locale în constante proprii.
 export const t = {
   appName: 'Flota Costuri',
@@ -13,7 +15,7 @@ export const t = {
   nav: {
     home: 'Acasă', trucks: 'Camioane', entry: 'Cheltuială nouă', income: 'Venit nou', ledger: 'Cheltuieli & venituri',
     verify: 'De verificat', courses: 'Curse', import: 'Import', reconcile: 'Confruntare GPS', emptykm: 'Km pe gol',
-    reports: 'Rapoarte', settings: 'Setări', groups: { work: 'Lucru', gps: 'GPS', analysis: 'Analiză', admin: 'Administrare' },
+    reports: 'Rapoarte', settings: 'Setări', guide: 'Cum se folosește', guideTitle: 'Ghid: cum se folosește aplicația', groups: { work: 'Lucru', gps: 'GPS', analysis: 'Analiză', admin: 'Administrare' },
   },
   sync: {
     local: 'Mod local · salvat pe acest dispozitiv', idle: 'Sincronizat la', saving: 'Se salvează…', offline: 'Offline: lucrezi pe datele locale',
@@ -21,11 +23,11 @@ export const t = {
     savedLocal: 'Salvat local', syncedAt: 'Sincronizat la', reconnect: 'Reconectează',
   },
   banners: {
-    demo: 'Mod local (demo): datele sunt legate de acest fișier / această adresă și de acest browser. Fă backup JSON periodic.',
-    sharedOrigin: 'Origine partajată: nu publica alte site-uri GitHub Pages pe acest cont GitHub (ele ar putea citi datele din acest browser).',
+    sharedOrigin: 'Alte site-uri publicate pe contul tău GitHub Pages ar putea citi datele din acest browser. Nu publica alte site-uri pe acest cont sau folosește un domeniu propriu.',
     sharedOriginBlocked: 'Conectarea Google este oprită pe acest domeniu github.io (origine partajată). Pentru a o porni pune acceptSharedOrigin: true în config.js; vezi docs/GOOGLE-SETUP.md. Până atunci lucrezi în modul local.',
     memoryOnly: 'Datele se pierd la închidere; descarcă backup.',
-    backupAge: (days) => (days == null ? 'Nu ai făcut încă niciun backup.' : `Ultimul backup: acum ${days} ${days === 1 ? 'zi' : 'zile'}.`),
+    backupAge: (days) => (days == null ? 'Nu ai făcut încă niciun backup.' : days === 0 ? 'Ultimul backup: azi.' : days === 1 ? 'Ultimul backup: ieri.' : `Ultimul backup: acum ${zileRo(days)}.`),
+    backupDue: (label) => (label === 'niciodată' ? 'Nu ai făcut încă niciun backup. Fă unul acum, ca să nu pierzi datele.' : `Ultimul backup: ${label}. Fă unul nou, ca să nu pierzi datele.`),
     syncFailed: (hhmm) => `Nu s-a putut sincroniza, datele afișate sunt cele locale (ultima sincronizare ${hhmm || '—'}).`,
     clock: 'Ceasul dispozitivului nu este corect: generarea cheltuielilor fixe este oprită.',
     nonBnr: (n) => `${n} sume folosesc un curs care nu este BNR.`,

@@ -1,7 +1,7 @@
 import { html, useState, useMemo } from '../../ui/dom.js';
 import { t } from '../../ui/strings.js';
 import { useCtx, useCollection, useMonth, useCompany } from '../../ui/hooks.js';
-import { Card, PageHeader, Button, Table, Badge, Select, TextInput, EmptyState, Note, Kpi, ErrorState } from '../../ui/components/index.js';
+import { HelpLink, Card, PageHeader, Button, Table, Badge, Select, TextInput, EmptyState, Note, Kpi, ErrorState } from '../../ui/components/index.js';
 import { call, api, tryCall } from '../../ui/api.js';
 import { saveBytes } from '../../ui/actions.js';
 import { truckLabel, nameMap, monthLabel, coll } from '../../ui/selectors.js';
@@ -71,7 +71,7 @@ function ReconcileScreen() {
     { key: 's', header: 'Suport', card: 'badges', render: (e) => { const [k, l] = SUPPORT[e.support] || SUPPORT.none; return html`<${Badge} kind=${k}>${l}<//>`; } },
   ];
   return html`<div class="stack"><${PageHeader} title=${t.nav.reconcile} sub=${monthLabel(month) + ' · ce arată GPS-ul față de ce s-a facturat'}>
-      <${Button} sm kind="sec" icon="download" onClick=${exportXlsx}>Export Excel<//><${Button} sm kind="sec" onClick=${persistAll} title="Salvează steagurile curente ca să le poți marca">Fixează steagurile<//><//>
+      <${HelpLink} id="ecran-confruntare" /><${Button} sm kind="sec" icon="download" onClick=${exportXlsx}>Export Excel<//><${Button} sm kind="sec" onClick=${persistAll} title="Salvează steagurile curente ca să le poți marca">Fixează steagurile<//><//>
     <${Card}><div class="form-grid"><${Select} label="Camion" value=${truckId} onChange=${setTruckId} options=${[{ value: '', label: 'Toate' }, ...trucks.map((x) => ({ value: x.id, label: truckLabel(x) }))]} /></div><//>
     ${total.courses === 0 && r.uncoveredPeriods.length === 0 ? html`<${EmptyState} icon="gps" title="Nimic de confruntat în această lună" action=${html`<${Button} onClick=${() => ctx.nav('/import')}>Importă curse și GPS<//>`}>Importă tabelul de curse și exporturile SafeFleet.<//>` : html`
     <div class="kpis"><${Kpi} label="Curse facturate" value=${total.courses} /><${Kpi} label="Cu suport GPS" value=${total.withSupport} tone="pos" /><${Kpi} label="Fără suport / fără GPS" value=${total.withoutSupport} tone=${total.withoutSupport ? 'neg' : ''} />

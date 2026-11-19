@@ -275,3 +275,33 @@ test('origine partajată (D21): doar *.github.io cu Client ID; Google cere accep
   assert.equal(S.sharedOriginState('localhost', { googleClientId: 'x' }), null);
   assert.equal(S.sharedOriginState('evilgithub.io', { googleClientId: 'x' }), null);
 });
+
+test('backup în cuvinte: azi la HH:mm / ieri / acum N zile / niciodată, niciodată „acum 0 zile” (D22)', () => {
+  const now = new Date(2026, 10, 19, 12, 0).getTime();
+  assert.equal(S.backupAgeLabel(null, now), 'niciodată');
+  assert.equal(S.backupAgeLabel(new Date(2026, 10, 19, 8, 5).toISOString(), now), 'azi la 08:05');
+  assert.equal(S.backupAgeLabel(new Date(2026, 10, 18, 22, 0).toISOString(), now), 'ieri');
+  assert.equal(S.backupAgeLabel(new Date(2026, 10, 16, 10, 0).toISOString(), now), 'acum 3 zile');
+  assert.equal(S.backupAgeLabel(new Date(2026, 9, 29, 10, 0).toISOString(), now), 'acum 21 de zile');
+  assert.ok(!/acum 0/.test(S.backupAgeLabel(new Date(2026, 10, 19, 0, 1).toISOString(), now)));
+  assert.deepEqual([1, 2, 19, 20, 21, 101, 120].map(S.zileRo), ['1 zi', '2 zile', '19 zile', '20 de zile', '21 de zile', '101 zile', '120 de zile']);
+});
+
+test('memento backup: doar cu date, cu backup lipsă sau >7 zile, și nu cât timp e amânat (D22)', () => {
+  const now = Date.parse('2026-11-19T12:00:00Z');
+  const old = '2026-11-01T12:00:00Z', fresh = '2026-11-18T12:00:00Z';
+  assert.equal(S.backupReminderDue({ lastBackupAt: null, nowMs: now, snoozeUntil: NaN, hasData: true }), true);
+  assert.equal(S.backupReminderDue({ lastBackupAt: old, nowMs: now, snoozeUntil: NaN, hasData: true }), true);
+  assert.equal(S.backupReminderDue({ lastBackupAt: fresh, nowMs: now, snoozeUntil: NaN, hasData: true }), false);
+  assert.equal(S.backupReminderDue({ lastBackupAt: old, nowMs: now, snoozeUntil: NaN, hasData: false }), false);
+  assert.equal(S.backupReminderDue({ lastBackupAt: old, nowMs: now, snoozeUntil: now + 3600000, hasData: true }), false);
+  assert.equal(S.backupReminderDue({ lastBackupAt: old, nowMs: now, snoozeUntil: now - 1, hasData: true }), true);
+  assert.equal(S.backupOverdue(fresh, now), false);
+});
+
+test('avertismentul de origine partajată: cheie de confirmare după domeniu și configurație (D22)', () => {
+  assert.equal(S.sharedOriginAckKey('firma.github.io', { accepted: true }), 'firma.github.io|acceptat');
+  assert.equal(S.sharedOriginAckKey('Firma.GitHub.io', { accepted: false }), 'firma.github.io|oprit');
+  assert.equal(S.sharedOriginAckKey('localhost', null), null);
+  assert.notEqual(S.sharedOriginAckKey('a.github.io', { accepted: true }), S.sharedOriginAckKey('b.github.io', { accepted: true }));
+});

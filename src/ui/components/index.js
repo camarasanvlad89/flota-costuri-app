@@ -4,5 +4,7 @@ export * from './forms.js';
 export * from './Table.js';
 export * from './overlay.js';
 export * from './SyncBanner.js';
+export * from './DataStatus.js';
 export * from './EntryForm.js';
 export * from './EntryEditor.js';
+export * from './HelpLink.js';

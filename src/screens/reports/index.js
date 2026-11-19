@@ -2,7 +2,7 @@ import { html, useState, useMemo } from '../../ui/dom.js';
 import { t } from '../../ui/strings.js';
 import { useCtx, useCollection, useDisplayCurrency, useMonth, useCompany } from '../../ui/hooks.js';
 import { useDomain, money, useToday } from '../../ui/screen-utils.js';
-import { Card, PageHeader, Button, Table, Badge, Note, Chart, HBars, Checkbox, DateInput, Select, ErrorState, Pl, EmptyState } from '../../ui/components/index.js';
+import { HelpLink, Card, PageHeader, Button, Table, Badge, Note, Chart, HBars, Checkbox, DateInput, Select, ErrorState, Pl, EmptyState } from '../../ui/components/index.js';
 import { call, api } from '../../ui/api.js';
 import { saveBytes } from '../../ui/actions.js';
 import { nameMap, truckLabel, monthLabel, shiftMonth, coll } from '../../ui/selectors.js';
@@ -145,7 +145,7 @@ function ReportsScreen({ query }) {
   const [month] = useMonth();
   const [cur] = useDisplayCurrency();
   const range = monthRange(month);
-  return html`<div class="stack"><${PageHeader} title=${t.nav.reports} sub=${monthLabel(month) + ' · ' + cur} />
+  return html`<div class="stack"><${PageHeader} title=${t.nav.reports} sub=${monthLabel(month) + ' · ' + cur}><${HelpLink} id="ecran-rapoarte" /><//>
     <div class="split"><nav class="card listnav" aria-label="Rapoarte">${LIST.map(([k, l]) => html`<button type="button" aria-current=${id === k ? 'true' : null} onClick=${() => setId(k)}>${l}</button>`)}</nav>
       <${Card} title=${(LIST.find((x) => x[0] === id) || [])[1]}>${id === 'custom' ? html`<${Custom} range=${range} cur=${cur} />` : html`<div class="stack"><${Report} id=${id} range=${range} cur=${cur} month=${month} /><${Meta} range=${range} cur=${cur} /></div>`}<//></div></div>`;
 }

@@ -161,6 +161,36 @@ export function backupAgeDays(lastBackupAt, nowMs) {
   if (!Number.isFinite(t)) return null;
   return Math.max(0, Math.floor((nowMs - t) / 86400000));
 }
+/** „zi” / „zile” / „de zile” corect în română: 1 zi, 2–19 zile, 20+ „de zile” (21 de zile, 101 zile). */
+export function zileRo(n) {
+  const m = n % 100;
+  if (n === 1) return '1 zi';
+  return m >= 1 && m <= 19 ? `${n} zile` : `${n} de zile`;
+}
+const dayStart = (d) => new Date(d.getFullYear(), d.getMonth(), d.getDate()).getTime();
+/** Vârsta backup-ului în cuvinte: „azi la 14:32”, „ieri”, „acum 3 zile”, „niciodată”. Niciodată „acum 0 zile”. */
+export function backupAgeLabel(lastBackupAt, nowMs) {
+  const t = lastBackupAt ? Date.parse(lastBackupAt) : NaN;
+  if (!Number.isFinite(t)) return 'niciodată';
+  const d = new Date(t);
+  const diff = Math.round((dayStart(new Date(nowMs)) - dayStart(d)) / 86400000);
+  if (diff <= 0) return 'azi la ' + String(d.getHours()).padStart(2, '0') + ':' + String(d.getMinutes()).padStart(2, '0');
+  if (diff === 1) return 'ieri';
+  return 'acum ' + zileRo(diff);
+}
+/** Backup lipsă sau mai vechi de 7 zile. */
+export function backupOverdue(lastBackupAt, nowMs) {
+  const days = backupAgeDays(lastBackupAt, nowMs);
+  return days == null || days > 7;
+}
+/** Notificarea de backup apare doar dacă ai date, backup-ul e depășit și nu ai amânat-o (snoozeUntil = ms). */
+export function backupReminderDue({ lastBackupAt, nowMs, snoozeUntil, hasData }) {
+  return !!hasData && backupOverdue(lastBackupAt, nowMs) && !(Number.isFinite(snoozeUntil) && nowMs < snoozeUntil);
+}
+/** Cheia memorată pentru „Am înțeles” la avertismentul de origine partajată: se schimbă dacă se schimbă domeniul sau configurația. */
+export function sharedOriginAckKey(hostname, shared) {
+  return shared ? `${String(hostname || '').toLowerCase()}|${shared.accepted ? 'acceptat' : 'oprit'}` : null;
+}
 export function dateRangeLabel(from, to) { return fmtDate(from) + ' – ' + fmtDate(to); }
 
 /** Profit cu semn + pictogramă (nu doar culoare). */

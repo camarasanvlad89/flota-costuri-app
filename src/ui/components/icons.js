@@ -40,6 +40,9 @@ const P = {
   sparkle: '<path d="M12 4v4M12 16v4M4 12h4M16 12h4M7 7l2 2M15 15l2 2M17 7l-2 2M9 15l-2 2"/>',
   gps: '<circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="8"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/>',
   empty: '<path d="M3 12h4l2-6 4 12 2-6h6"/>',
+  cloud: '<path d="M7.5 18.5a4.5 4.5 0 0 1-.5-8.97 6 6 0 0 1 11.3 1.7A3.9 3.9 0 0 1 17.5 18.5z"/>',
+  disk: '<rect x="3" y="14" width="18" height="6" rx="2"/><path d="M3 14l2.6-8.5h12.8L21 14"/><path d="M7 17h.01"/>',
+  help: '<circle cx="12" cy="12" r="9"/><path d="M9.4 9.3a2.7 2.7 0 1 1 3.9 2.4c-.9.5-1.3 1.1-1.3 2"/><path d="M12 17.2v.2"/>',
   repeat: '<path d="M17 3l3 3-3 3"/><path d="M4 11V9a3 3 0 0 1 3-3h13"/><path d="M7 21l-3-3 3-3"/><path d="M20 13v2a3 3 0 0 1-3 3H4"/>',
 };
 

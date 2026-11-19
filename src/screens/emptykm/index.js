@@ -2,7 +2,7 @@ import { html, useState, useMemo } from '../../ui/dom.js';
 import { t } from '../../ui/strings.js';
 import { useCtx, useCollection, useMonth, useDisplayCurrency } from '../../ui/hooks.js';
 import { useDomain } from '../../ui/screen-utils.js';
-import { Card, PageHeader, Kpi, Chart, Table, Badge, EmptyState, Button, Note, ErrorState, Loading, DateInput } from '../../ui/components/index.js';
+import { HelpLink, Card, PageHeader, Kpi, Chart, Table, Badge, EmptyState, Button, Note, ErrorState, Loading, DateInput } from '../../ui/components/index.js';
 import { truckLabel, nameMap, monthLabel, shiftMonth } from '../../ui/selectors.js';
 import { fmtKm, fmtPct, fmtMoney, fmtDate, monthRange } from '../../core/index.js';
 
@@ -29,7 +29,7 @@ function EmptyKmScreen() {
   const noGps = (r.noGpsTruckIds || []);
   const above = k.pctEmpty != null && b.avgEmptyPct != null && k.pctEmpty * 100 > b.avgEmptyPct;
   return html`<div class="stack"><${PageHeader} title=${t.nav.emptykm} sub=${gran === 'month' ? 'Ultimele 6 luni până la ' + monthLabel(month) : monthLabel(month)}>
-      <div class="opts" role="group" aria-label="Granularitate">${GRAN.map(([v, l]) => html`<button type="button" class="opt" aria-pressed=${gran === v} onClick=${() => setGran(v)}>${l}</button>`)}</div><//>
+      <${HelpLink} id="ecran-km-gol" /><div class="opts" role="group" aria-label="Granularitate">${GRAN.map(([v, l]) => html`<button type="button" class="opt" aria-pressed=${gran === v} onClick=${() => setGran(v)}>${l}</button>`)}</div><//>
     <div class="kpis">
       <${Kpi} big label="% km pe gol" value=${k.pctEmpty == null ? '—' : fmtPct(k.pctEmpty, 1)} tone=${above ? 'neg' : ''}
         delta=${html`reper ≈ ${b.avgEmptyPct}% medie · țintă sub ${b.targetEmptyPct}% <span class="muted">(${b.label || 'orientativ, sursă comercială'})</span>`} />

@@ -8,11 +8,18 @@ function hhmm(iso) {
   const d = new Date(iso);
   return isNaN(d) ? '—' : String(d.getHours()).padStart(2, '0') + ':' + String(d.getMinutes()).padStart(2, '0');
 }
-/** Pilula din antet: „Salvat local” + „Sincronizat la HH:mm” (vizibilă mereu, 4.3). */
+/** Starea sincronizării în cuvinte (pentru panoul „Stare date”). */
+export function syncLabel(st) {
+  const s = st.state;
+  return s === 'local' ? t.sync.savedLocal : s === 'idle' ? `${t.sync.savedLocal} · ${t.sync.syncedAt} ${hhmm(st.lastSyncedAt)}` : s === 'saving' ? t.sync.saving
+    : s === 'offline' ? t.sync.offline : s === 'authNeeded' ? t.sync.authNeeded : s === 'conflict' ? t.sync.conflict : t.sync.error;
+}
+/** Pilula din antet apare DOAR la o problemă reală (offline, reconectare, conflict, eroare). În rest starea e în iconița „Stare date”. */
 export function SyncStatus() {
   const st = useSyncStatus();
   const ctx = useCtx();
   const s = st.state;
+  if (s === 'local' || s === 'idle' || s === 'saving') return null;
   const cls = s === 'idle' || s === 'local' ? 'ok' : s === 'saving' ? '' : s === 'error' || s === 'conflict' ? 'bad' : 'warn';
   const label = s === 'local' ? t.sync.savedLocal : s === 'idle' ? `${t.sync.savedLocal} · ${t.sync.syncedAt} ${hhmm(st.lastSyncedAt)}` : s === 'saving' ? t.sync.saving
     : s === 'offline' ? t.sync.offline : s === 'authNeeded' ? t.sync.authNeeded : s === 'conflict' ? t.sync.conflict : t.sync.error;

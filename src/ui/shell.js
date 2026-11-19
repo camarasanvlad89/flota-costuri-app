@@ -3,8 +3,8 @@ import { CtxContext, useCtx, useStore, useDisplayCurrency, useMonth, useSingleto
 import { useLocation, matchRoute, navigate } from './router.js';
 import { navItems, screens } from './registry.js';
 import { t } from './strings.js';
-import { Icon, ErrorBoundary, Button, IconButton, Drawer, Sheet, Modal, ToastHost, ConfirmDialog, ShortcutsDialog, SyncStatus, DemoBadge, Loading, EntryForm, Badge } from './components/index.js';
-import { verifyCount, monthLabel, shiftMonth, isFirstRun, lastEntry, entryToForm, backupAgeDays, coll } from './selectors.js';
+import { Icon, ErrorBoundary, Button, IconButton, Drawer, Sheet, Modal, ToastHost, ConfirmDialog, ShortcutsDialog, SyncStatus, DataStatus, DataStatusPanel, DemoBadge, Loading, EntryForm, Badge } from './components/index.js';
+import { verifyCount, monthLabel, shiftMonth, isFirstRun, lastEntry, entryToForm, backupAgeDays, backupAgeLabel, backupReminderDue, sharedOriginAckKey, coll } from './selectors.js';
 import { todayLocal } from '../core/index.js';
 import { Welcome } from './Welcome.js';
 
@@ -53,25 +53,41 @@ function CurrencyToggle() {
   return html`<div class="seg" role="group" aria-label="Moneda de afișare"><button type="button" aria-pressed=${cur === 'RON'} onClick=${() => setCur('RON')}>RON</button><button type="button" aria-pressed=${cur === 'EUR'} onClick=${() => setCur('EUR')} title=${t.eurNote}>EUR</button></div>`;
 }
 
-function Bands({ mode }) {
+const LS_SNOOZE = 'flota:backupSnoozeUntil';
+const LS_ORIGIN_ACK = 'flota:sharedOriginAck';
+const lsGet = (k) => { try { return localStorage.getItem(k); } catch { return null; } };
+const lsSet = (k, v) => { try { localStorage.setItem(k, v); } catch { /* mod privat: se reafișează la următoarea deschidere */ } };
+
+/**
+ * Notificări: nimic nu stă permanent pe pagină și nimic nu mută conținutul (stratul e plutitor).
+ * - probleme reale (date doar în memorie, ceas greșit): vizibile cât timp durează;
+ * - memento backup: doar dacă ai date și backup-ul lipsește sau are peste 7 zile; „Mai târziu” îl amână 24 h;
+ * - origine partajată (github.io): o singură dată, până la „Am înțeles”.
+ */
+function Notices() {
   const ctx = useCtx();
-  const st = ctx.syncStatus;
   const ui = useSingleton('ui');
-  const entries = useCollection('entries');
-  const days = backupAgeDays(ui.lastBackupAt, ctx.clock.now());
-  const bands = [];
-  if (mode === 'local') bands.push(html`<div class="banner info plain" role="note"><${Icon} name="info" /><span>${t.banners.demo}</span></div>`);
-  if (ctx.sharedOrigin) {
-    bands.push(ctx.sharedOrigin.accepted
-      ? html`<div class="banner caution plain" role="note" data-testid="shared-origin"><${Icon} name="alert" /><span>${t.banners.sharedOrigin}</span></div>`
-      : html`<div class="banner caution plain" role="note" data-testid="shared-origin-blocked"><${Icon} name="alert" /><span>${t.banners.sharedOriginBlocked}</span></div>`);
+  const [, bump] = useState(0);
+  const now = ctx.clock.now();
+  const st = ctx.store.state();
+  const hasData = (ui.welcomeDone && !isFirstRun(st)) || coll(st, 'entries').length > 0;
+  const originKey = sharedOriginAckKey(typeof location !== 'undefined' ? location.hostname : '', ctx.sharedOrigin);
+  const items = [];
+  if (ctx.memoryOnly) items.push(html`<div class="banner danger plain" role="alert"><${Icon} name="alert" /><span>${t.banners.memoryOnly}</span><button type="button" class="lnk" onClick=${ctx.downloadBackup}>${t.errors.backup}</button></div>`);
+  if (ctx.clockBad) items.push(html`<div class="banner danger plain" role="alert"><${Icon} name="clock" /><span>${t.banners.clock}</span></div>`);
+  const soft = []; // notificările „moi” vin pe rând: întâi avertismentul de origine (o singură dată), apoi memento-ul de backup
+  if (originKey && lsGet(LS_ORIGIN_ACK) !== originKey) {
+    soft.push(html`<div class="banner caution plain" role="status" data-testid="shared-origin"><${Icon} name="alert" /><span>${ctx.sharedOrigin.accepted ? t.banners.sharedOrigin : t.banners.sharedOriginBlocked}</span>
+      <button type="button" class="lnk" onClick=${() => { lsSet(LS_ORIGIN_ACK, originKey); bump((n) => n + 1); }}>Am înțeles</button>
+      <button type="button" class="lnk" onClick=${() => ctx.nav('/setari/date')}>Detalii</button></div>`);
   }
-  if (ctx.memoryOnly) bands.push(html`<div class="banner danger plain" role="alert"><${Icon} name="alert" /><span>${t.banners.memoryOnly}</span><button type="button" class="lnk" onClick=${ctx.downloadBackup}>${t.errors.backup}</button></div>`);
-  if (entries.length > 0 || (ui.welcomeDone && !isFirstRun(ctx.store.state()))) {
-    bands.push(html`<div class=${'banner plain ' + (days == null || days > 7 ? 'caution' : 'neutral')} role="note"><${Icon} name="download" /><span>${t.banners.backupAge(days)}</span><button type="button" class="lnk" onClick=${ctx.downloadBackup}>Descarcă backup acum</button></div>`);
+  if (backupReminderDue({ lastBackupAt: ui.lastBackupAt, nowMs: now, snoozeUntil: Number(lsGet(LS_SNOOZE)), hasData })) {
+    soft.push(html`<div class="banner caution plain" role="status" data-testid="backup-reminder"><${Icon} name="download" /><span>${t.banners.backupDue(backupAgeLabel(ui.lastBackupAt, now))}</span>
+      <button type="button" class="lnk" onClick=${() => ctx.downloadBackup()}>Descarcă acum</button>
+      <button type="button" class="lnk" onClick=${() => { lsSet(LS_SNOOZE, String(now + 86400000)); bump((n) => n + 1); }}>Mai târziu</button></div>`);
   }
-  if (ctx.clockBad) bands.push(html`<div class="banner danger plain" role="alert"><${Icon} name="clock" /><span>${t.banners.clock}</span></div>`);
-  return bands.length ? html`<section class="bands" aria-label="Avertismente">${bands.map((b, i) => html`<div key=${i}>${b}</div>`)}</section>` : null;
+  if (soft.length) items.push(soft[0]);
+  return items.length ? html`<section class="notices" aria-label="Notificări">${items.map((b, i) => html`<div key=${i}>${b}</div>`)}</section>` : null;
 }
 
 function useTheme() {
@@ -103,6 +119,8 @@ function Topbar({ mode }) {
     <${DemoBadge} />
     <div class="toolbar tb-right">
       <${SyncStatus} />
+      <${DataStatus} />
+      <span class="hide-phone"><${IconButton} icon="help" label="Cum se folosește" onClick=${() => ctx.nav('/ghid')} /></span>
       <${Button} sm icon="plus" class="hide-phone" onClick=${() => ctx.openEntry('expense')} title="n">${t.nav.entry}<//>
       <${Button} sm kind="sec" icon="plus" class="hide-phone" onClick=${() => ctx.openEntry('income')} title="v">${t.nav.income}<//>
       <div class="menu-wrap hide-phone">
@@ -148,6 +166,7 @@ export function App({ ctx, mode }) {
   const [entryDrawer, setEntryDrawer] = useState(null);
   const [confirm, setConfirm] = useState(null);
   const [shortcuts, setShortcuts] = useState(false);
+  const [statusOpen, setStatusOpen] = useState(false);
   const toasts = useToasts(ctx.host);
   const mainRef = useRef(null);
   const [welcomed, setWelcomed] = useState(false);
@@ -159,6 +178,7 @@ export function App({ ctx, mode }) {
     ctx.host.setEntryHandler((kind, initial) => setEntryDrawer({ kind, initial, key: Date.now() }));
     ctx.host.setConfirmHandler((opts) => new Promise((resolve) => setConfirm({ opts, resolve })));
     ctx.showShortcuts = () => setShortcuts(true);
+    ctx.showStatus = () => setStatusOpen(true);
   }, [ctx]);
   useEffect(() => { if (loc.path === '/' || loc.path === '') navigate('/acasa'); }, [loc.path]);
   useEffect(() => { // focus pe conținut la schimbarea paginii (8.0.2)
@@ -190,7 +210,7 @@ export function App({ ctx, mode }) {
     <a class="skip" href="#main-content" onClick=${(e) => { e.preventDefault(); mainRef.current && mainRef.current.focus(); }}>Sari la conținut</a>
     ${needsWelcome ? html`<${Welcome} mode=${mode} onDone=${() => setWelcomed(true)} />` : html`
     <div class="app"><${Sidebar} screen=${match && match.screen} /><${MobileNav} screen=${match && match.screen} />
-      <div class="main"><${Topbar} mode=${mode} /><${Bands} mode=${mode} />
+      <div class="main"><${Topbar} mode=${mode} /><${Notices} />
         ${ctx.progress ? html`<${GlobalProgress} />` : null}
         <main id="main-content" class="page" tabindex="-1" ref=${mainRef}>
           <${ErrorBoundary} inline onBackup=${ctx.downloadBackup} key=${loc.path}>${Comp ? html`<${Comp} params=${match.params} query=${loc.query} />` : html`<${NotFound} />`}<//>
@@ -204,6 +224,7 @@ export function App({ ctx, mode }) {
         <${Button} onClick=${() => { ctx.sync.resolveFirstConnect('useDrive'); setFirstConnect(null); }}>Folosește Drive<//>`}>
       <p>Există date în ambele locuri. Nimic nu se unește automat.</p>
       <dl class="kv"><dt>Pe acest dispozitiv</dt><dd>${countText(firstConnect.local)}</dd><dt>În Drive</dt><dd>${countText(firstConnect.remote)}</dd></dl><//>` : null}
+    ${statusOpen ? html`<${DataStatusPanel} onClose=${() => setStatusOpen(false)} />` : null}
     ${shortcuts ? html`<${ShortcutsDialog} enabled=${!ui || ui.hotkeys !== false} onClose=${() => setShortcuts(false)} />` : null}
     <${ToastHost} toasts=${toasts} dismiss=${(id) => ctx.host.dismiss(id)} />
   <//><//>`;

@@ -1,7 +1,7 @@
 import { html, useState, useMemo, useEffect } from '../../ui/dom.js';
 import { t } from '../../ui/strings.js';
 import { useCtx, useCollection, useUiPref, useMonth } from '../../ui/hooks.js';
-import { Card, PageHeader, Button, Table, Pager, Badge, EmptyState, Select, TextInput, Modal, Note, Icon, ProgressBar } from '../../ui/components/index.js';
+import { HelpLink, Card, PageHeader, Button, Table, Pager, Badge, EmptyState, Select, TextInput, Modal, Note, Icon, ProgressBar } from '../../ui/components/index.js';
 import { CourseForm } from './CourseForm.js';
 import { tryCall } from '../../ui/api.js';
 import { useToday } from '../../ui/screen-utils.js';
@@ -90,7 +90,7 @@ function CoursesScreen({ query }) {
     { key: 'st', header: 'Stare', card: 'badges', render: (c) => html`<span class="toolbar" style="gap:4px">${c.status === 'review' ? html`<${Badge} kind="warn">de verificat<//>` : null}${tryCall('uitStatus', [c, today], { state: 'ok' }).state === 'missing' ? html`<${Badge} kind="neutral">lipsă UIT<//>` : null}</span>` },
   ];
   return html`<div class="stack"><${PageHeader} title=${t.nav.courses} sub=${rows.length + ' curse'}>
-      <${Button} sm kind="sec" icon="route" onClick=${calcKm} disabled=${calc}>Calculează km<//><${Button} sm kind="sec" icon="upload" onClick=${() => ctx.nav('/import')}>Import<//><${Button} sm icon="plus" onClick=${() => setEdit({})}>Cursă nouă<//><//>
+      <${HelpLink} id="ecran-curse" /><${Button} sm kind="sec" icon="route" onClick=${calcKm} disabled=${calc}>Calculează km<//><${Button} sm kind="sec" icon="upload" onClick=${() => ctx.nav('/import')}>Import<//><${Button} sm icon="plus" onClick=${() => setEdit({})}>Cursă nouă<//><//>
     ${noPrice ? html`<${Note} kind="warn">${noPrice} curse fără preț (apar și în De verificat).<//>` : null}
     <${Card}><div class="form-grid" role="search">
       <${Select} label="Camion" value=${f.truckId} onChange=${(v) => setF({ ...f, truckId: v })} options=${[{ value: '', label: 'Toate' }, ...trucks.map((x) => ({ value: x.id, label: truckLabel(x) }))]} />

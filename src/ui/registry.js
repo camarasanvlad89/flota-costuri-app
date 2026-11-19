@@ -10,8 +10,9 @@ import { screen as reconcile } from '../screens/reconcile/index.js';
 import { screen as emptykm } from '../screens/emptykm/index.js';
 import { screen as reports } from '../screens/reports/index.js';
 import { screen as settings } from '../screens/settings/index.js';
+import { screen as guide } from '../screens/ghid/index.js';
 
-export const screens = [home, truck, ledger, entry, verify, courses, importScreen, reconcile, emptykm, reports, settings];
+export const screens = [home, truck, ledger, entry, verify, courses, importScreen, reconcile, emptykm, reports, settings, guide];
 export const byId = (id) => screens.find((s) => s.id === id);
 /** Ecranele afișate în meniul lateral, ordonate. */
 export function navItems() {
